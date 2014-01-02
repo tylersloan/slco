@@ -1,0 +1,72 @@
+/* _home.scss */
+
+@import 'variables';
+
+.home {
+	.hero {
+		position: relative;
+		background: url(../../images/doctor.jpg) no-repeat top center;
+		background-size: cover;
+		height: 525px;
+		z-index: 0;
+		box-shadow: inset 0 2px 9px rgba(0, 0, 0, 0.35)
+	}
+}
+
+.banner {
+	width: 475px;
+	margin: 0 auto;
+	text-align: center;
+	background: $blue;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.15);
+
+	p {
+		color: #fff;
+		line-height: 2.5;
+		font-weight: 300;
+	}
+}
+
+.factoid {
+	position: absolute;
+	width: 335px;
+	height: 335px;
+	top: 90px;
+	right: 220px;
+	text-align: center;
+	background: rgba(255,255,255,.95);
+	@include border-radius(100%);
+	z-index: 25;
+
+	h4 {
+		width: 79%;
+		margin: 90px auto 20px auto;
+		color: $blue;
+		font-size: 1em;
+		@include roboto-cond;
+		font-weight: 300;
+	}
+
+	hr {
+		width: 107px;
+		height: 1px;
+		margin: 0 auto;
+		border: none;
+		background: $blue;
+	}
+
+	span {
+		position: relative;
+		top: -13px;
+		font-size: 1.15em;
+		color: $blue;
+	}
+
+	p {
+		width: 77%;
+		margin: 0 auto;
+		font-size: .7em;
+	}
+}

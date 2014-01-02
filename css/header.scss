@@ -1,0 +1,38 @@
+/* _header.scss */
+
+@import 'variables';
+
+header {
+	height: 70px;
+	padding: 20px 50px;
+	@include box-shadow(0, 2px, 9px, rgba(0,0,0,.35));
+	z-index: 10;
+}
+
+.logo {
+	display: inline-block;
+	width: 260px;
+	background: url(../../images/carolina-oaks-logo.png) no-repeat;
+	background-size: 258px auto;
+	text-indent: -9999px;
+	line-height: .9;
+}
+
+nav {
+	float: right;
+	display: inline-block;
+	margin-top: 8px;
+	vertical-align: top;
+	ul {
+		display: inline-block;
+		@include proxima;
+		font-size: 14px;
+		color: $blue;
+		li {
+			display: inline-block;
+			list-style: none;
+			margin-left: 25px;
+			text-transform: uppercase;
+		}
+	}
+}

@@ -1,0 +1,28 @@
+@import 'variables';
+
+* {
+	margin: 0;
+	padding: 0;
+	@include border-box;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	background: {
+		color: #fff;
+	}
+	@include roboto;
+	color: #555555;
+	font-size: 18px;
+	line-height: 1.45;
+}
+
+a, a:visited {
+	color: $blue;
+	text-decoration: none;
+	&:hover, &:focus { color: darken($blue, 10%); text-decoration: none; }
+}
+
+@import 'header';
+@import 'home';
