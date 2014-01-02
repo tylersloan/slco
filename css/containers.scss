@@ -1,0 +1,64 @@
+/* _containers.scss */
+@import 'variables';
+
+.main-content {
+	width: 100%;
+	max-width: 1440px;
+	text-align: center;
+}
+
+.third-width {
+	position: relative;
+	display: inline-block;
+	width: 30%;
+	max-width: 260px;
+	margin: -60px 3% 0 0;
+	text-align: left;
+	vertical-align: top;
+	z-index: 0;
+
+	&:last-child { margin-right: 0; }
+
+	span {
+		display: block;
+		width: 100px;
+		height: 100px;
+		margin: 0 auto 55px auto;
+		padding-top: 30px;
+		text-align: center;
+		font-size: 40px;
+		color: #fff;
+		@include border-radius(100%);
+	}
+
+	.title {
+		display: block;
+		font-size: .69em;
+		font-weight: 700;
+		color: $orange;
+	}
+
+	.description {
+		margin: 0px 0 25px 0;
+		@include roboto-cond;
+		font-weight: 400;
+		color: $blue;
+	}
+
+	.more-details {
+		font-size: .7em;
+	}
+}
+
+.care {
+	span, .button { background: $blue; }
+}
+
+.staff {
+	span, .button { background: $yellow; }
+}
+
+.appointment {
+	span, .button { background: $orange; }
+}
+
