@@ -27,11 +27,15 @@ a, a:visited {
 		display: inline-block;
 		width: 150px;
 		margin-top: 25px;
-		padding: 11px 0;
+		padding: 5px 0;
 		font-weight: 700;
 		color: #fff;
 		text-align: center;
 		@include border-radius(2px);
+
+		@media screen and (max-width: 767px) {
+			width: 100%;
+		}
 	}
 }
 
@@ -42,6 +46,15 @@ hr {
 		background: url(../../images/light-square-bg.png) repeat top left;
 		background-size: 10px;
 		border: none;
+	}
+}
+
+p {
+	&.cond {
+		@include roboto-cond;
+		font: {
+			weight: 300;
+		}
 	}
 }
 

@@ -21,16 +21,16 @@ module.exports = function(grunt) {
           }
         },
 
-        imagemin: {
-          dynamic: {
-            files: [{
-	            expand: true,
-	            cwd: 'images/',
-	            src: ['**/*.{png,jpg,gif}'],
-	            dest: 'images/build/'
-            }]
-          }
-        },
+        // imagemin: {
+        //   dynamic: {
+        //     files: [{
+	       //      expand: true,
+	       //      cwd: 'images/',
+	       //      src: ['**/*.{png,jpg,gif}'],
+	       //      dest: 'images/build/'
+        //     }]
+        //   }
+        // },
 
         watch: {
         	options: {
@@ -70,11 +70,12 @@ module.exports = function(grunt) {
     // 3. Where we tell Grunt we plan to use this plug-in.
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-imagemin');
+    // grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'watch', 'sass']);
+    grunt.registerTask('default', ['concat', 'uglify', 'watch', 'sass']);
+    // grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'watch', 'sass']);
 
 };

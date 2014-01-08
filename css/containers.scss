@@ -4,6 +4,7 @@
 .main-content {
 	width: 100%;
 	max-width: 1440px;
+	padding-bottom: 45px;
 	text-align: center;
 }
 
@@ -17,6 +18,22 @@
 	vertical-align: top;
 	z-index: 0;
 
+	@media screen and (max-width: 900px) {
+		width: 28%;
+		margin: -60px 1% 0 1%;
+	}
+
+	@media screen and (max-width: 767px) {
+		width: 70%;
+		max-width: 70%;
+		margin: 20px 0;
+	}
+
+	@media screen and (max-width: 480px) {
+		width: 90%;
+		max-width: 90%;
+	}
+
 	&:last-child { margin-right: 0; }
 
 	span {
@@ -29,6 +46,15 @@
 		font-size: 40px;
 		color: #fff;
 		@include border-radius(100%);
+
+		@media screen and (max-width: 768px) {
+			margin: 0 auto 35px auto;
+		}
+
+		@media screen and (max-width: 767px) {
+			float: left;
+			margin: 0 20px 0 0;
+		}
 	}
 
 	.title {
@@ -36,6 +62,14 @@
 		font-size: .69em;
 		font-weight: 700;
 		color: $orange;
+
+		@media screen and (max-width: 767px) {
+			margin-top: 14px;
+		}
+
+		@media screen and (max-width: 480px) {
+			margin-top: 0px;
+		}
 	}
 
 	.description {
@@ -43,6 +77,10 @@
 		@include roboto-cond;
 		font-weight: 400;
 		color: $blue;
+
+		@media screen and (max-width: 767px) {
+			margin: 0px 0 30px 0;
+		}
 	}
 
 	.more-details {
@@ -62,3 +100,203 @@
 	span, .button { background: $orange; }
 }
 
+footer {
+	position: relative;
+	background: $blue;
+	color: white;
+
+	.half-width {
+		p {
+			width: 390px;
+
+			@media screen and (max-width: 900px) {
+				width: 100%;
+			}
+		}
+	}
+
+	p {
+		@include roboto;
+		font: {
+			size: 13px;
+			weight: normal;
+		}
+		line-height: 18px;
+
+		@media screen and (max-width: 768px) {
+			font-size: 15px;
+		}
+
+		&.cond {
+			margin-bottom: 12px;
+			font-size: 30px;
+			line-height: 1.2;
+
+			@media screen and (max-width: 900px) {
+				font-size: 27px;
+			}
+		}
+	}
+
+	.full-width { text-align: center; padding: 45px 0; }
+
+	form {
+		width: 100%;
+
+		input {
+			float: left;
+			-webkit-appearance: none;
+			border: none;
+			display: inline-block;
+			width: 48.8%;
+			margin: 0 10px 10px 0;
+			padding: 5px 14px;
+			@include roboto;
+			font: {
+				size: 18px;
+				weight: normal;
+			}
+			color: #959595;
+			@include border-box;
+			@include border-radius(2px);
+
+			&:nth-child(even) { margin-right: 0; }
+
+			@media screen and (max-width: 1024px) {
+				width: 48%;
+			}
+			
+			@media screen and (max-width: 900px) {
+				display: block;
+				width: 100%;
+			}
+
+			@media screen and (max-width: 768px) {
+				display: inline-block;
+				width: 49%;
+			}
+
+			@media screen and (max-width: 600px) {
+				display: block;
+				width: 100%;
+			}
+		}
+
+		button {
+			-webkit-appearance: none;
+			border: none;
+			width: 100%;
+			padding: 5px 0;
+			background: $yellow;
+			@include border-radius(2px);
+			@include roboto;
+			color: white;
+			font-weight: bold;
+			font-size: 18px;
+
+			@media screen and (max-width: 1024px) {
+				width: 98.5%;
+			}
+
+			@media screen and (max-width: 900px) {
+				width: 100%;
+			}
+
+			@media screen and (max-width: 768px) {
+				width: 99.7%;
+			}
+
+			@media screen and (max-width: 600px) {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.empathy {
+	background: url(../../images/square-bg-pattern.png) repeat;
+	background-size: 10px;
+
+	p.cond {
+		width: 90%;
+		max-width: 720px;
+		margin: 0 auto;
+		padding: 50px 0;
+		font: {
+			size: 36px;
+		}
+		text-align: center;
+		line-height: 1.25;
+
+		@media screen and (max-width: 900px) {
+			font-size: 33px;
+		}
+	}
+}
+
+.full-width {
+	width: 90%;
+	max-width: 945px;
+	margin: 0 auto;
+}
+
+section {
+	&.half-width {
+		display: inline-block;
+		width: 49%;
+		margin: 0;
+		text-align: left;
+		vertical-align: top;
+
+		@media screen and (max-width: 900px) {
+			width: 40%;
+			margin-right: 65px;
+
+			&:last-child { margin-right: 0; }
+		}
+		
+		@media screen and (max-width: 768px) {
+			width: 100%;
+			margin-bottom: 25px;
+		}
+	}
+}
+
+.footer-nav {
+	width: 90%;
+	max-width: 945px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+	font-size: 14px;
+	@include roboto;
+
+	ul {
+		display: inline-block;
+		
+		li {
+			display: inline-block;
+			list-style: none;
+			margin-right: 17px;
+			color: white;
+
+			a, a:visited {
+				color: $yellow;
+				text-decoration: none;
+
+				&:hover, &:focus { color: darken($yellow,10%); }
+			}
+		}
+	}
+
+	p {
+		float: right;
+		font: {
+			weight: 500;
+		}
+
+		@media screen and (max-width: 900px) {
+			float: none;
+			display: inline-block;
+		}
+	}
+}

@@ -7,6 +7,15 @@ header {
 	padding: 20px 50px;
 	@include box-shadow(0, 2px, 9px, rgba(0,0,0,.35));
 	z-index: 10;
+
+	@media screen and (max-width: 768px) {
+		height: auto;
+	}
+
+	@media screen and (max-width: 768px) {
+		height: 67px;
+		padding: 20px 0px;
+	}
 }
 
 .logo {
@@ -16,6 +25,13 @@ header {
 	background-size: 258px auto;
 	text-indent: -9999px;
 	line-height: .9;
+
+	@media screen and (max-width: 768px) {
+		display: block;
+		width: 100%;
+		background-position: center top;
+		text-align: center;
+	}
 }
 
 nav {
@@ -23,11 +39,20 @@ nav {
 	display: inline-block;
 	margin-top: 8px;
 	vertical-align: top;
+
+	@media screen and (max-width: 768px) {
+		display: block;
+		margin-top: 15px;
+		text-align: center;
+		float: none;
+	}
+	
 	ul {
 		display: inline-block;
 		@include proxima;
 		font-size: 14px;
 		color: $blue;
+	
 		li {
 			display: inline-block;
 			list-style: none;
