@@ -36,6 +36,20 @@ $light-grey: #d5d5cf;
 	        border-radius: $radius;
 }
 
+@mixin column-count($howmany) {
+	-webkit-column-count: $howmany;
+	-moz-column-count: $howmany;
+	-o-column-count: $howmany;
+	column-count: $howmany;
+}
+
+@mixin column-gap($width) {
+	-webkit-column-gap: $width;
+	-moz-column-gap: $width;
+	-o-column-gap: $width;
+	column-gap: $width;
+}
+
 @mixin proxima {
 	font: {
 		family: "proxima-nova", sans-serif;

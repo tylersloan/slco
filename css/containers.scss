@@ -3,9 +3,45 @@
 
 .main-content {
 	width: 100%;
-	max-width: 1440px;
+	max-width: 945px;
+	margin: 0 auto;
 	padding-bottom: 45px;
 	text-align: center;
+
+	.main {
+		display: inline-block;
+		max-width: 560px;
+		width: 560px;
+
+		.light {
+			width: 330px;
+		}
+		
+		.button {
+			float: right;
+			margin-right: 16px;
+			padding: 11px 30px;
+			line-height: .7;
+			@include border-radius(2px);
+		}
+	}
+
+	aside {
+		float: right;
+		max-width: 385px;
+	}
+}
+
+.two-column {
+	margin-top: 25px;
+	@include column-count(2);
+	@include column-gap(35px);
+
+	p {
+		margin-top: 25px;
+
+		&:first-child { margin-top: 0; }
+	}
 }
 
 .third-width {
@@ -36,6 +72,38 @@
 
 	&:last-child { margin-right: 0; }
 
+	&.care {
+		span, .button {
+			background: $blue;
+
+			&:hover, &:focus {
+				background: darken($blue, 8%);
+			}
+		}
+	}
+
+	&.staff {
+		span, .button {
+			background: $yellow;
+
+			&:hover, &:focus {
+				background: darken($yellow, 8%);
+			}
+		}
+
+		.description { letter-spacing: -0.2px; }
+	}
+
+	&.appointment {
+		span, .button {
+			background: $orange;
+
+			&:hover, &:focus {
+				background: darken($orange, 8%);
+			}
+		}
+	}
+
 	span {
 		display: block;
 		width: 100px;
@@ -62,72 +130,6 @@
 			margin: 0 10px 0 0;
 			padding-top: 24px;
 			font-size: 30px;
-		}
-	}
-
-	.title {
-		display: block;
-		font-size: .69em;
-		font-weight: 700;
-		color: $orange;
-
-		@media screen and (max-width: 767px) {
-			margin-top: 14px;
-		}
-
-		@media screen and (max-width: 480px) {
-			margin-top: 0px;
-		}
-	}
-
-	.description {
-		margin: 0px 0 25px 0;
-		@include roboto-cond;
-		font-weight: 400;
-		color: $blue;
-
-		@media screen and (max-width: 767px) {
-			margin: 0px 0 30px 0;
-		}
-
-		@media screen and (max-width: 7320px) {
-			font-size: .85em;
-		}
-	}
-
-	.more-details {
-		font-size: .7em;
-	}
-}
-
-.care {
-	span, .button {
-		background: $blue;
-
-		&:hover, &:focus {
-			background: darken($blue, 8%);
-		}
-	}
-}
-
-.staff {
-	span, .button {
-		background: $yellow;
-
-		&:hover, &:focus {
-			background: darken($yellow, 8%);
-		}
-	}
-
-	.description { letter-spacing: -0.2px; }
-}
-
-.appointment {
-	span, .button {
-		background: $orange;
-
-		&:hover, &:focus {
-			background: darken($orange, 8%);
 		}
 	}
 }

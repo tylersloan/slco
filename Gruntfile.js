@@ -9,7 +9,6 @@ module.exports = function(grunt) {
         	  src: [
         	    'js/libs/*.js', // All JS in the libs folder
               'js/scripts.js',  // This specific file
-        	    'js/flying-focus.js'  // This specific file
         	  ],
           dest: 'js/build/production.js',
         	}
@@ -61,7 +60,10 @@ module.exports = function(grunt) {
               style: 'compressed'
             },
             files: {
-              'css/build/style.css': 'css/style.scss'
+              'css/build/style.css': 'css/style.scss',
+              'css/build/home.css': 'css/home.scss',
+              'css/build/doctors.css': 'css/doctors.scss',
+              'css/build/care.css': 'css/care.scss'
             }
           } 
         }

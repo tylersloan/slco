@@ -1,3 +1,5 @@
+/* _iphone-landscape.scss */
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
 	
 	body {
@@ -21,19 +23,14 @@
 	}
 
 	nav {
-		margin-top: 0;
+		margin-top: 5px;
 		ul {
 			width: 40%;
-			font-size: 1em;
-			li {
-				padding: 6px 0 5px 0;	
-			}
-		}
-	}
+			font-size: .9em;
 
-	.home {
-		.hero {
-			height: 180px;
+			li {
+				padding: 7px 0;
+			}
 		}
 	}
 

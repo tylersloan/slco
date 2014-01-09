@@ -20,8 +20,12 @@ header {
 		@include transition(175ms, all, ease-in-out);
 	}
 
-	&.open {
-		height: 237px;
+	&.open { height: 237px; }
+
+	.header {
+		max-width: 1180px;
+		width: 95%;
+		margin: 0 auto;
 	}
 }
 
@@ -33,6 +37,10 @@ header {
 	text-indent: -9999px;
 	line-height: .9;
 
+	a {
+		display: block;
+	}
+
 	@media screen and (max-width: 768px) {
 		display: block;
 		width: 100%;
@@ -42,14 +50,13 @@ header {
 
 	@media screen and (max-width: 480px) {
 		background-size: 210px auto;
-		background-position: 5% 3px;
+		background-position: left 3px;
 	}
 }
 
 nav {
 	float: right;
 	display: inline-block;
-	margin-top: 8px;
 	vertical-align: top;
 
 	@media screen and (max-width: 768px) {
@@ -71,14 +78,19 @@ nav {
 	
 		li {
 			display: inline-block;
+			padding: 10px 11px;
 			list-style: none;
-			margin-left: 25px;
+			line-height: 0.7;
 			text-transform: uppercase;
+			border: {
+				width: 2px;
+				style: solid;
+				color: #fff;
+			}
+			@include border-radius(3px);
 
 			@media screen and (max-width: 480px) {
 				display: block;
-				padding: 10px 0;
-				margin-left: 0;
 				border-bottom: 1px solid lighten($blue, 40%);
 
 				&:last-child { border-bottom: none; }
@@ -106,5 +118,77 @@ nav {
 	&.down {
 		@include transform( translate3d(0,36px,0) );
 		// @include border-radius(100%);
+	}
+}
+
+.doctors {
+	nav{
+		li {
+			&.selected { border-color: $yellow;
+				
+				@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
+					border: none;
+					border-bottom: 1px solid lighten($blue, 40%);	
+					@include border-radius(0);
+				}
+				
+				a, a:visited { color: $yellow;
+					&:hover, &:focus { color: darken($yellow,10%); }
+				}
+			}
+		}
+	}
+
+	.mobile-menu-icon {
+		color: $yellow;
+		border-color: $yellow;
+	}
+}
+
+.care {
+	nav{
+		li {
+			&.selected { border-color: $orange;
+
+				@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
+					border: none;
+					border-bottom: 1px solid lighten($orange, 40%);	
+					@include border-radius(0);
+				}
+
+				a, a:visited { color: $orange;
+					&:hover, &:focus { color: darken($orange,10%); }
+				}
+			}
+		}
+	}
+
+	.mobile-menu-icon {
+		color: $orange;
+		border-color: $orange;
+	}
+}
+
+.locations {
+	nav{
+		li {
+			&.selected { border-color: $blue;
+
+				@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
+					border: none;
+					border-bottom: 1px solid lighten($blue, 40%);	
+					@include border-radius(0);
+				}
+
+				a, a:visited { color: $blue;
+					&:hover, &:focus { color: darken($blue,10%); }
+				}
+			}
+		}
+	}
+
+	.mobile-menu-icon {
+		color: $blue;
+		border-color: $blue;
 	}
 }

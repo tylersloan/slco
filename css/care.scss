@@ -1,0 +1,35 @@
+@import 'variables';
+
+.care {
+	.hero {
+		background: url(../../images/care-hero.jpg) no-repeat top center;
+		background-size: cover;
+		height: 390px;
+
+		@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
+			height: 180px;
+		}
+	}
+
+	.button {
+		background: $orange;
+		&:hover, &:focus {
+			background: darken($orange,10%); 
+		}
+	}
+
+	.main-content {
+		text-align: left;
+
+		p {
+			font-size: 13px;
+		}
+	}
+
+	.headline {
+
+		span {
+			color: $orange;
+		}
+	}
+}
