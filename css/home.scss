@@ -83,10 +83,8 @@
 		z-index: -1;
 	}
 
-	@media screen and (max-width: 480px) {
-		// display: none;
-		// width: 135px;
-		// height: 135px;
+	@media screen and (max-width: 320px) {
+		padding-top: 22%;
 	}
 
 	h4 {

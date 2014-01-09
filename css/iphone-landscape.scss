@@ -1,0 +1,96 @@
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
+	
+	body {
+		font-size: 10px;
+	}	
+
+	header {
+		height: 35px;
+		padding: 10px 0px 20px 0px;
+
+		&.open { height: 140px; }
+	}
+
+	.logo {
+		background-size: 100px auto;
+	}
+
+	.mobile-menu-icon {
+		font-size: 1em;
+		@include transform( translate3d(0px, 6px, 0) );
+	}
+
+	nav {
+		margin-top: 0;
+		ul {
+			width: 40%;
+			font-size: 1em;
+			li {
+				padding: 6px 0 5px 0;	
+			}
+		}
+	}
+
+	.home {
+		.hero {
+			height: 180px;
+		}
+	}
+
+	.banner {
+		p {font-size: .9em; width: 90%; }
+	}
+
+	.factoid { padding-top: 18%;
+
+		h4 { margin: 0px auto 10px auto; }
+		span { top: -6px; }
+
+		p { font-size: .8em; }
+	}
+
+	hr {
+		&.square {
+			height: 7px;
+			background-size: 4px;
+		}
+	}
+
+	.third-width {
+		.description { margin: 0 0 10px 0; }
+		.more-details { font-size: .8em; }
+	}
+
+	.empathy {
+		p.cond {
+			padding: 25px 0;
+			font-size: 1.45em;
+		}
+	}
+
+	section {
+
+		&.half-width { margin-bottom: 10px; }
+	}
+
+	footer {
+
+		p { font-size: 1em;
+			&.cond { font-size: 1.3em; }
+		}
+
+		form {
+			input {
+				width: 49%;
+				margin: 0 2% 2% 0;
+				padding: 5px;
+				font-size: 1em;
+				&:nth-child(even) { margin-right: 0; }
+			}
+
+			input[type="submit"] { font-size: 1.1em; }
+		}
+	}
+
+	.footer-nav { font-size: 1em; }
+}

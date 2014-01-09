@@ -89,21 +89,19 @@ nav {
 
 .mobile-menu-icon {
 	display: none;
+	position: absolute;
+	padding: 5px 5px 6px 6px;
+	top: 0;
+	right: 5%;
+	line-height: 1;
+	font-size: 22px;
+	color: $blue;
+	border: 1px solid $blue;
+	@include border-radius(2px);
+	@include transform( translate3d(0px, 16px, 0) );
+	@include transition(175ms, all, ease-in-out);
 
-	@media screen and (max-width: 480px) {
-		display: inline-block;
-		position: absolute;
-		padding: 5px 5px 6px 6px;
-		top: 0;
-		right: 5%;
-		line-height: 1;
-		font-size: 22px;
-		color: $blue;
-		border: 1px solid $blue;
-		@include border-radius(2px);
-		@include transform( translate3d(0px, 16px, 0) );
-		@include transition(175ms, all, ease-in-out);
-	}
+	@media screen and (max-width: 480px) { display: inline-block; }
 
 	&.down {
 		@include transform( translate3d(0,36px,0) );
