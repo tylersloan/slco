@@ -55,6 +55,14 @@
 			float: left;
 			margin: 0 20px 0 0;
 		}
+
+		@media screen and (max-width: 320px) {
+			width: 80px;
+			height: 80px;
+			margin: 0 10px 0 0;
+			padding-top: 24px;
+			font-size: 30px;
+		}
 	}
 
 	.title {
@@ -81,6 +89,10 @@
 		@media screen and (max-width: 767px) {
 			margin: 0px 0 30px 0;
 		}
+
+		@media screen and (max-width: 7320px) {
+			font-size: .85em;
+		}
 	}
 
 	.more-details {
@@ -89,15 +101,33 @@
 }
 
 .care {
-	span, .button { background: $blue; }
+	span, .button {
+		background: $blue;
+
+		&:hover, &:focus {
+			background: darken($blue, 8%);
+		}
+	}
 }
 
 .staff {
-	span, .button { background: $yellow; }
+	span, .button {
+		background: $yellow;
+
+		&:hover, &:focus {
+			background: darken($yellow, 8%);
+		}
+	}
 }
 
 .appointment {
-	span, .button { background: $orange; }
+	span, .button {
+		background: $orange;
+
+		&:hover, &:focus {
+			background: darken($orange, 8%);
+		}
+	}
 }
 
 footer {
@@ -182,9 +212,9 @@ footer {
 			}
 		}
 
-		button {
+		input[type="submit"] {
 			-webkit-appearance: none;
-			border: none;
+			// border: none;
 			width: 100%;
 			padding: 5px 0;
 			background: $yellow;
@@ -193,6 +223,7 @@ footer {
 			color: white;
 			font-weight: bold;
 			font-size: 18px;
+			cursor: pointer;
 
 			@media screen and (max-width: 1024px) {
 				width: 98.5%;
@@ -231,6 +262,10 @@ footer {
 		@media screen and (max-width: 900px) {
 			font-size: 33px;
 		}
+
+		@media screen and (max-width: 480px) {
+			font-size: 28px;
+		}
 	}
 }
 
@@ -258,6 +293,7 @@ section {
 		@media screen and (max-width: 768px) {
 			width: 100%;
 			margin-bottom: 25px;
+			margin-right: auto;
 		}
 	}
 }

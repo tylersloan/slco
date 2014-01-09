@@ -16,6 +16,20 @@ $light-grey: #d5d5cf;
           box-shadow: $top $left $blur $color;
 }
 
+@mixin transition($time, $what, $how) {
+	-webkit-transition: $time $what $how;
+	   -moz-transition: $time $what $how;
+	     -o-transition: $time $what $how;
+	        transition: $time $what $how;
+}
+
+@mixin transform($transformation) {
+	-webkit-transform: $transformation;
+	   -moz-transform: $transformation;
+	     -o-transform: $transformation;
+	        transform: $transformation;
+}
+
 @mixin border-radius($radius) {
 	-webkit-border-radius: $radius;
 	   -moz-border-radius: $radius;

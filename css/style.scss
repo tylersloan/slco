@@ -8,6 +8,25 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+::selection { background: $blue;  color: white; }
+::-moz-selection { background: $blue;  color: white; }
+
+input, textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  outline-offset: 0px;
+  border: 2px solid darken($blue,10%);
+	// box-shadow: 0 0 5px 0px $blue;
+
+  &:focus {
+  	// box-shadow: 0 0 8px 0px darken($blue,15%);
+  	border: 2px solid darken($blue,10%);
+  }
+}
+
 body {
 	background: {
 		color: #fff;

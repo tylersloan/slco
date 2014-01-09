@@ -15,6 +15,7 @@
 		<div class="logo">
 			<h1>Carolina Oaks</h1>
 		</div>
+		<span class="mobile-menu-icon icon-menu2"></span>
 		<nav>
 			<ul>
 				<li><a href="/care/">Care</a></li>
@@ -81,12 +82,12 @@
 				<p>Ut quam lectus, blandit a viverra nec, scelerisque quis orci. Proin id aliquet nisi. In porttitor ac dolor id dignissim. Pellentesque nisl massa, convallis vitae dui vitae, bibendum egestas risus.</p>
 			</section>
 			<section class="half-width">
-				<form id="contact">
-					<input placeholder="Your Name">
-					<input placeholder="Your Email">
-					<input placeholder="Daytime Phone">
-					<input placeholder="Best Time to Call">
-					<button>Continue</button>
+				<form id="contact" autocomplete="on" method="post">
+					<input placeholder="Your Name" name="name">
+					<input placeholder="Your Email" name="email">
+					<input placeholder="Daytime Phone" name="phone">
+					<input placeholder="Best Time to Call" name="time">
+					<input type="submit" value="Continue">
 				</form>
 			</section>
 		</div>
@@ -103,6 +104,18 @@
 		</div>		
 		
 	</footer>
+
+	<script>
+
+		$( document ).ready(function() {
+		  
+		  $('.mobile-menu-icon').on('click', function(){
+		  	$('header').toggleClass('open');
+		  });
+		  
+		});
+	
+	</script>
 	
 </body>
 </html>

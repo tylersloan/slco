@@ -3,18 +3,25 @@
 @import 'variables';
 
 header {
+	position: relative;
 	height: 70px;
 	padding: 20px 50px;
 	@include box-shadow(0, 2px, 9px, rgba(0,0,0,.35));
 	z-index: 10;
+	overflow: hidden;
 
 	@media screen and (max-width: 768px) {
 		height: auto;
 	}
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 480px) {
 		height: 67px;
 		padding: 20px 0px;
+		@include transition(175ms, all, ease-in-out);
+	}
+
+	&.open {
+		height: 237px;
 	}
 }
 
@@ -31,6 +38,11 @@ header {
 		width: 100%;
 		background-position: center top;
 		text-align: center;
+	}
+
+	@media screen and (max-width: 480px) {
+		background-size: 210px auto;
+		background-position: 5% 3px;
 	}
 }
 
@@ -52,12 +64,49 @@ nav {
 		@include proxima;
 		font-size: 14px;
 		color: $blue;
+
+		@media screen and (max-width: 480px) {
+			width: 50%;
+		}
 	
 		li {
 			display: inline-block;
 			list-style: none;
 			margin-left: 25px;
 			text-transform: uppercase;
+
+			@media screen and (max-width: 480px) {
+				display: block;
+				padding: 10px 0;
+				margin-left: 0;
+				border-bottom: 1px solid lighten($blue, 40%);
+
+				&:last-child { border-bottom: none; }
+			}
 		}
+	}
+}
+
+.mobile-menu-icon {
+	display: none;
+
+	@media screen and (max-width: 480px) {
+		display: inline-block;
+		position: absolute;
+		padding: 5px 5px 6px 6px;
+		top: 0;
+		right: 5%;
+		line-height: 1;
+		font-size: 22px;
+		color: $blue;
+		border: 1px solid $blue;
+		@include border-radius(2px);
+		@include transform( translate3d(0px, 16px, 0) );
+		@include transition(175ms, all, ease-in-out);
+	}
+
+	&.down {
+		@include transform( translate3d(0,36px,0) );
+		// @include border-radius(100%);
 	}
 }

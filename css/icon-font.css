@@ -1,16 +1,16 @@
 @font-face {
-	font-family: 'carolina-oak-icons';
-	src:url('../carolina-oak-icons/carolina-oak-icons.eot');
-	src:url('../carolina-oak-icons/carolina-oak-icons.eot?#iefix') format('embedded-opentype'),
-		url('../carolina-oak-icons/carolina-oak-icons.woff') format('woff'),
-		url('../carolina-oak-icons/carolina-oak-icons.ttf') format('truetype'),
-		url('../carolina-oak-icons/carolina-oak-icons.svg#carolina-oak-icons') format('svg');
+	font-family: 'carolina-oaks-icons';
+	src:url('../carolina-oak-icons/carolina-oaks-icons.eot');
+	src:url('../carolina-oak-icons/carolina-oaks-icons.eot?#iefix') format('embedded-opentype'),
+		url('../carolina-oak-icons/carolina-oaks-icons.woff') format('woff'),
+		url('../carolina-oak-icons/carolina-oaks-icons.ttf') format('truetype'),
+		url('../carolina-oak-icons/carolina-oaks-icons.svg#carolina-oaks-icons') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-	font-family: 'carolina-oak-icons';
+	font-family: 'carolina-oaks-icons';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
@@ -23,6 +23,9 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-menu2:before {
+	content: "\e632";
+}
 .icon-user:before {
 	content: "\e600";
 }
@@ -37,4 +40,13 @@
 }
 .icon-acorn:before {
 	content: "\e604";
+}
+.icon-grid-view:before {
+	content: "\e605";
+}
+.icon-arrow-right:before {
+	content: "\e606";
+}
+.icon-arrow-left:before {
+	content: "\e607";
 }

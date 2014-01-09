@@ -9,8 +9,13 @@
 		background-size: cover;
 		height: 525px;
 		z-index: 0;
-		box-shadow: inset 0 2px 9px rgba(0, 0, 0, 0.35)
+		box-shadow: inset 0 2px 9px rgba(0, 0, 0, 0.35);
+		
+		@media screen and (max-width: 700px) {
+			height: 325px;
+		}
 	}
+
 }
 
 .banner {
@@ -38,6 +43,14 @@
 		font-size: 1em;
 		line-height: 2.5;
 		font-weight: 300;
+
+		@media screen and (max-width: 480px) {
+			width: 80%;
+			margin: 0 auto;
+			padding: 9px 0;
+			font-size: .8em;
+			line-height: 1.2;
+		}
 	}
 }
 
@@ -51,13 +64,27 @@
 	background: rgba(255,255,255,.95);
 	@include border-radius(100%);
 	z-index: 25;
+	@include transition(175ms, all, ease-in-out);
 
 	@media screen and (max-width: 1024px) {
 		right: 5%;
 	}
 
+	@media screen and (max-width:700px) {
+		width: 100%;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		height: auto;
+		padding-top: 19%;
+		background: rgba(255, 255, 255, 0.8);
+		border-radius: 0;
+		z-index: -1;
+	}
+
 	@media screen and (max-width: 480px) {
-		display: none;
+		// display: none;
 		// width: 135px;
 		// height: 135px;
 	}
@@ -69,6 +96,11 @@
 		font-size: 1em;
 		@include roboto-cond;
 		font-weight: 300;
+
+		@media screen and (max-width: 700px) {
+			margin: 0px auto 20px auto;
+			font-size: 1.2em;
+		}
 	}
 
 	hr {
