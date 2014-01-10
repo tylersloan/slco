@@ -59,7 +59,7 @@ a, a:visited {
 		text-align: center;
 		@include border-radius(2px);
 
-		@media screen and (max-width: 767px) {
+		@media screen and (max-width: 768px) {
 			width: 100%;
 		}
 	}
@@ -164,13 +164,6 @@ p {
 	}
 }
 
-.headline {
-	span {
-		.care & { color: $orange; }
-		.doctors & { color: $yellow; }
-	}
-}
-
 .wrapper {
 	position: relative;
 	width: 90%;
@@ -187,6 +180,15 @@ p {
 	top: 180px;
 	left: 8%;
 
+	@media screen and (max-width: 768px) {
+		display: block;
+		position: relative;
+		width: 95%;
+		margin: 90px auto 0 auto;
+		top: 0;
+		left: auto;
+	}
+
 	span {
 		float: left;
 		width: 141px;
@@ -197,6 +199,13 @@ p {
 		text-align: center;
 		font-size: 3.1em;
 		@include border-radius(100%);
+
+		@media screen and (max-width: 768px) {
+			margin: 0 20px 0 0;
+		}
+
+		.care & { color: $orange; }
+		.doctors & { color: $yellow; }
 	}
 
 	p {

@@ -151,7 +151,7 @@
 
 				submitHandler: function(form) {
 					// do other stuff for a valid form
-					$.post('/contactme/process.php', $('#contactme').serialize(), function(data) {
+					$.post('contactme/process.php', $('#contactme').serialize(), function(data) {
 						$('#results').html(data);
 					});
 				}

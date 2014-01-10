@@ -62,8 +62,7 @@ module.exports = function(grunt) {
             files: {
               'css/build/style.css': 'css/style.scss',
               'css/build/home.css': 'css/home.scss',
-              'css/build/doctors.css': 'css/doctors.scss',
-              'css/build/care.css': 'css/care.scss'
+              'css/build/pages.css': 'css/pages.scss'
             }
           } 
         }

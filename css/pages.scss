@@ -15,6 +15,15 @@
 		}
 		@include border-radius(3px);
 
+		@media screen and (max-width: 768px) {
+			display: block;
+			position: relative;
+			margin: 0 auto;
+			top: 20px;
+			right: auto;
+			text-align: center;
+		}
+
 		p {
 			padding: 20px 18px;
 			line-height: .7;
@@ -28,6 +37,11 @@
 		ul {
 			margin: 25px 0 55px 0;
 			padding: 0;
+
+			@media screen and (max-width: 768px) {
+				margin: 25px 0 25px 0;
+			}
+			
 			li {
 				margin-right: 28px;
 				font-size: .77em;
@@ -70,8 +84,20 @@
 				padding: 12px 30px;
 				background: $orange;
 				font-size: 18px;
+
+				@media screen and (max-width: 768px) {
+					float: none;
+					margin-top: 15px;
+				}
+				
 				&:hover, &:focus {
 					background: darken($orange,10%); 
+				}
+			}
+
+			@media screen and (max-width: 767px) {
+				> .description {
+					margin: 0px 0 60px 0;
 				}
 			}
 		}
@@ -84,6 +110,12 @@
 		min-height: 140px;
 		margin: 0;
 
+		@media screen and (max-width: 767px) {
+			margin: -40px 0;
+
+		}
+			&:first-child { margin-top: 0;}
+
 		img {
 			float: left;
 			width: 140px;
@@ -91,22 +123,70 @@
 			margin: 0 24px 0 0;
 			@include border-radius(100%);
 			vertical-align: middle;
+
+			@media screen and (max-width: 768px) {
+				width: 110px;
+				height: 110px;
+				margin: 0 15px 0 0;
+			}
 		}
 
 		p {
 			margin: 0;
 			vertical-align: middle;
-			&.title, &.description { display: inline-block; margin: 30px 8px 0 0; }
+
+			@media screen and (max-width: 767px) {
+				max-width: 80%;
+				margin: 0 auto 0 0;
+			}
+
+			&.title, &.description {
+				display: inline-block;
+				margin: 30px 8px 0 0;
+
+				@media screen and (max-width: 768px) {
+					display: block;
+					margin: 0px 8px 0 0;
+				}
+
+				@media screen and (max-width: 767px) {
+					display: inline-block;
+					margin: 30px 8px 0 0;
+				}
+			}
 		}
 
 		&:nth-child(even) {
 			text-align: right;
+
+			@media screen and (max-width: 768px) {
+				margin: 15px 0 15px 0px;
+			}
+
 			img {
 				float: right;
 				margin: 0 0 0 24px;
+
+				@media screen and (max-width: 768px) {
+					margin: 0 0 0 15px;
+				}
 			}
 			p {
-				&.title, &.description { margin: 30px 0 0 8px; }
+				@media screen and (max-width: 767px) {
+					margin: 0 0 0 auto;
+				}
+
+				&.title, &.description {
+					margin: 30px 0 0 8px;
+
+					@media screen and (max-width: 768px) {
+						margin: 0px 0px 0 8px;
+					}
+
+					@media screen and (max-width: 767px) {
+						margin: 30px 0 0 8px;
+					}
+				}
 			}
 		}
 	}
