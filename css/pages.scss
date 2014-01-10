@@ -1,6 +1,25 @@
 @import 'variables';
 
-.care, .doctors {
+.care, .doctors, .locations {
+
+	.banner {
+		position: absolute;
+		display: inline-block;
+		right: 14px;
+		top: 42px;
+		background: transparent;
+		border: {
+			width: 3px;
+			color: white;
+			style: solid;
+		}
+		@include border-radius(3px);
+
+		p {
+			padding: 20px 18px;
+			line-height: .7;
+		}
+	}
 
 	.main-content {
 		text-align: left;
@@ -50,6 +69,7 @@
 				margin-top: 3px;
 				padding: 12px 30px;
 				background: $orange;
+				font-size: 18px;
 				&:hover, &:focus {
 					background: darken($orange,10%); 
 				}
@@ -90,4 +110,38 @@
 			}
 		}
 	}
+}
+
+.locations {
+
+	.map {
+	  position: relative;
+	  height: 390px;
+	  z-index: 10;
+	  @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
+	  	height: 180px;
+	  }
+	}
+
+	.description {
+		margin: 0px 0 35px 0;
+	}
+
+	aside {
+		.description { margin: 0px 0 12px 0; }
+	}
+
+	.third-width {
+		width: auto;
+		margin: 0 40px 0 0;
+
+		.entry {
+			margin: 0 0 15px 0;
+
+			&:last-child { margin: 0; }
+		}
+
+		a { display: block; }
+	}
+	
 }

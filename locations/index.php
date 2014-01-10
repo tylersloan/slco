@@ -1,39 +1,10 @@
-<?php
-$subjectPrefix = '[Contact form submission]';
-$emailTo = 'tyler.g.sloan@gmail.com';
-
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $name    = stripslashes(trim($_POST['name']));
-    $email   = stripslashes(trim($_POST['email']));
-    $phone = stripslashes(trim($_POST['phone']));
-    $message = stripslashes(trim($_POST['time-to-call']));
-
-    $emailIsValid = preg_match('/^[^0-9][A-z0-9._%+-]+([.][A-z0-9_]+)*[@][A-z0-9_]+([.][A-z0-9_]+)*[.][A-z]{2,4}$/', $email);
-
-    if($name && $email && $emailIsValid && $subject && $message){
-        $subject = "$subjectPrefix";
-        $body = "Name: $name <br /> Email: $email <br /> Best time to call: $time-to-call";
-
-        $headers  = 'MIME-Version: 1.1' . PHP_EOL;
-        $headers .= 'Content-type: text/html; charset=utf-8' . PHP_EOL;
-        $headers .= "From: $name <$email>" . PHP_EOL;
-        $headers .= "Return-Path: $emailTo" . PHP_EOL;
-        $headers .= "Reply-To: $email" . PHP_EOL;
-
-        mail($emailTo, $subject, $body, $headers);
-        $emailSent = true;
-    } else {
-        $hasError = true;
-    }
-}
-?>
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
 	<title>Carolina Oaks | Locations</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="../css/build/style.css">
-	<link rel="stylesheet" type="text/css" href="../css/build/care.css">
+	<link rel="stylesheet" type="text/css" href="../css/build/pages.css">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,500|Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="../css/icon-font.css">
 	<script src="../js/build/production.min.js"></script>
@@ -173,22 +144,128 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 				<p>Ut quam lectus, blandit a viverra nec, scelerisque quis orci. Proin id aliquet nisi. In porttitor ac dolor id dignissim. Pellentesque nisl 
 			</section>
 			<section class="half-width">
-				<?php if(isset($emailSent) && $emailSent): ?>
-				    <div class="col-md-6 col-md-offset-3">
+				<?php // if(isset($emailSent) && $emailSent): ?>
+				    <!-- <div class="col-md-6 col-md-offset-3">
 				        <div class="alert alert-success text-center">Your message was sent successfully.</div>
-				    </div>
-				<?php else: ?>
-				    <?php if(isset($hasError) && $hasError): ?>
-				    <div class="col-md-5 col-md-offset-4">
+				    </div> -->
+				<?php // else: ?>
+				    <?php // if(isset($hasError) && $hasError): ?>
+				    <!-- <div class="col-md-5 col-md-offset-4">
 				        <div class="alert alert-danger text-center">There was an error in sending, please try again later.</div>
-				    </div>
-				    <?php endif; ?>
-				<form action="<?php echo $_SERVER['REQUEST_URI']; ?>" id="contact" autocomplete="on" method="post">
+				    </div> -->
+				    <?php // endif; ?>
+				<!-- <form action="<?php echo $_SERVER['REQUEST_URI']; ?>" id="contact-form" autocomplete="on" method="post">
 					<input placeholder="Your Name" id="name" name="name">
 					<input placeholder="Your Email" id="email" name="email" type="email">
 					<input placeholder="Daytime Phone" id="phone" name="phone" type="tel">
 					<input placeholder="Best Time to Call" id="time-to-call" name="time" maxlength="100">
 					<input type="submit" value="Continue">
+				</form> -->
+				<?php // endif; ?>
+				<script type="text/javascript">
+				//message box validation
+				function limitarelungime(obj, length){
+				        var lungime=length
+				        if (obj.value.length>lungime)
+				        obj.value=obj.value.substring(0, lungime)
+				        }
+					
+				//email form validation
+
+				function everif(str) {
+
+						var at="@"
+						var punct="."
+						var lat=str.indexOf(at)
+						var lstr=str.length
+						var lpunct=str.indexOf(punct)
+						if (str.indexOf(at)==-1){
+						   alert("Valid email must be entered")
+						   return false
+						}
+
+						if (str.indexOf(at)==-1 || str.indexOf(at)==0 || str.indexOf(at)==lstr){
+						   alert("Valid email must be entered")
+						   return false
+						}
+
+						if (str.indexOf(punct)==-1 || str.indexOf(punct)==0 || str.indexOf(punct)==lstr){
+						    alert("Valid email must be entered")
+						    return false
+						}
+
+						 if (str.indexOf(at,(lat+1))!=-1){
+						    alert("Valid email must be entered")
+						    return false
+						 }
+
+						 if (str.substring(lat-1,lat)==punct || str.substring(lat+1,lat+2)==punct){
+						    alert("Valid email must be entered")
+						    return false
+						 }
+
+						 if (str.indexOf(punct,(lat+2))==-1){
+						    alert("Valid email must be entered")
+						    return false
+						 }
+						
+						 if (str.indexOf(" ")!=-1){
+						    alert("Valid email must be entered")
+						    return false
+						 }
+
+				 		 return true					
+					}
+
+				function evalid(){
+					var emailID=document.contact_form.mail
+					
+					if (everif(emailID.value)==false){
+						emailID.focus()
+						return false
+					}
+					
+				//empty field validation
+					
+					var fname=document.contact_form.fname
+					if ((fname.value==null)||(fname.value=="")){
+				        alert("Fields marqued with * must be entered")
+				        fname.focus()
+				        return false
+				        }
+				 
+					var message=document.contact_form.message	
+					if ((message.value==null)||(message.value=="")){
+				        alert("Fields marqued with * must be entered")
+				        message.focus()
+				        return false
+				        }
+							
+					return true
+				 }
+				 </script>
+				<form name="contact_form" method="post" action="mailer.php" onSubmit="return evalid()">
+				<table border="0"><tr>
+				    <td>First Name *</td>
+				    <td colspan="2"><input name="fname" type="text" size="30" /></td>
+				  </tr><tr>
+				    <td>Your E-mail *</td>
+				    <td colspan="2"><input type="text" name="mail" size="30" /></td>
+				  </tr><tr>
+				    <td>Phone</td>
+				    <td colspan="2"><input name="phone" type="text" size="30" onkeypress="return numere(event)" onkeyup="return limitarelungime(this, 10)"  /></td>
+				  </tr><tr>
+				    <td>Message *</td>
+				    <td colspan="2"><textarea name="message" onkeyup="return limitarelungime(this, 100)"  cols="35" rows="5"></textarea></td>
+				  </tr><tr>
+				    <td> </td>
+				    <td colspan="2"> </td>
+				  </tr>
+				  <tr>
+				    <td><input type="reset" name="reset" value="Reset"/></td>
+				    <td align="right"><input type="submit" name="Submit" value="Submit"></td><td align="right"><a href="http://www.scriptgenerator.net/71/HTML%7B47%7DPHP-Contact-Form-Mailer-Generator/" title="Valid Contact Form"><img src="http://www.scriptgenerator.net/images/validform.jpg" alt="Valid Contact Form" width="20" height="20" border="0" /></a></td>
+				  </tr>
+				</table>
 				</form>
 			</section>
 		</div>
@@ -205,6 +282,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 		</div>		
 		
 	</footer>
+
+	<script type="text/javascript" src="../js/contact-form.js"></script>
 
 	<script>
 

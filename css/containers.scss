@@ -54,6 +54,20 @@
 
 			.doctors & { background: $blue; }
 			.care & { background: $orange; }
+			.locations & { background: $blue; }
+		}
+
+		.button {
+			width: auto;
+			margin-top: 25px;
+			margin-bottom: 60px;
+			padding: 11px 31px;
+			line-height: .7;
+			font: {
+				weight: 700;
+			}
+			background: $orange;
+			&:hover, &:focus { background: darken($orange,10%); }
 		}
 	}
 }
@@ -203,6 +217,31 @@ footer {
 	form {
 		width: 100%;
 
+		input[type='text'],input[type='tel'],textarea {
+			font-size:16px;
+			width: 48.8%;
+			@media screen and (max-width: 1024px) {
+				width: 48%;
+			}
+			
+			@media screen and (max-width: 900px) {
+				display: block;
+				width: 100%;
+			}
+
+			@media screen and (max-width: 768px) {
+				display: inline-block;
+				width: 49%;
+			}
+
+			@media screen and (max-width: 600px) {
+				display: block;
+				width: 100%;
+			}
+		}
+
+		input[type="submit"] { font-size: 16px; }
+
 		input {
 			float: left;
 			-webkit-appearance: none;
@@ -216,6 +255,7 @@ footer {
 				weight: normal;
 			}
 			color: #959595;
+			background-color: rgba(255,255,255,.95);
 			@include border-box;
 			@include border-radius(2px);
 

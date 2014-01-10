@@ -11,13 +11,27 @@
 ::selection { background: $blue;  color: white; }
 ::-moz-selection { background: $blue;  color: white; }
 
+fieldset {
+	-webkit-appearance: none;
+	border: none;
+}
+
 input, textarea {
+	-webkit-appearance: none;
   outline: none;
   outline-offset: 0px;
   border: 2px solid $blue;
 	@include transition(175ms, all, ease-in-out);
-	&:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
-  &:focus { border: 2px solid darken($blue,12%); }
+	&:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; color: rgb(149, 149, 149) !important; }
+  &:focus { background-color: white; border: 2px solid darken($blue,12%); }
+  &::-webkit-input-placeholder { color: #959595; }
+  &::-moz-placeholder { color: #959595; }
+  &:-moz-placeholder { color: #959595; }
+  &:-ms-input-placeholder { color: #959595; } 
+}
+
+.results {
+	@include roboto-cond;
 }
 
 body {
@@ -141,9 +155,12 @@ p {
 			height: 180px;
 		}
 	}
-			
-	@media screen and (max-width: 700px) {
-		height: 325px;
+
+	.locations & {
+		height: 390px;
+		@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
+			height: 180px;
+		}
 	}
 }
 
@@ -160,25 +177,6 @@ p {
 	max-width: 1180px;
 	margin: 0 auto;
 	color: white;
-}
-
-.banner {
-	position: absolute;
-	display: inline-block;
-	right: 14px;
-	top: 42px;
-	background: transparent;
-	border: {
-		width: 3px;
-		color: white;
-		style: solid;
-	}
-	@include border-radius(3px);
-
-	p {
-		padding: 20px 18px;
-		line-height: .7;
-	}
 }
 
 .headline {

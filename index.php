@@ -1,22 +1,31 @@
+<!DOCTYPE HTML>
 <html>
 <head>
 	<title>Carolina Oaks | Home</title>
+	<!-- <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="css/build/style.css">
 	<link rel="stylesheet" type="text/css" href="css/build/home.css">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,500|Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/icon-font.css">
 	<script src="js/build/production.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="//use.typekit.net/gfr3hyo.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<style type="text/css">
+	.contactformbutton input.error, .contactformbutton textarea.error { background: white url('images/exclamation.png') no-repeat 95% center; background-size: 4px; border: 2px solid #a01515; }
+	</style>
+	
 </head>
 <body class="home">
 	
 	<header>
 		<div class="header">
-			<div class="logo">
+			<a href="../" class="logo">Carolina Oaks</a>
+			<!-- <div class="logo">
 				<h1><a href="../">Carolina Oaks</a></h1>
-			</div>
+			</div> -->
 			<span class="mobile-menu-icon icon-menu2"></span>
 			<nav>
 				<ul>
@@ -85,13 +94,25 @@
 				<p>Ut quam lectus, blandit a viverra nec, scelerisque quis orci. Proin id aliquet nisi. In porttitor ac dolor id dignissim. Pellentesque nisl massa, convallis vitae dui vitae, bibendum egestas risus.</p>
 			</section>
 			<section class="half-width">
-				<form id="contact" autocomplete="on" method="post">
-					<input placeholder="Your Name" name="name">
-					<input placeholder="Your Email" name="email">
-					<input placeholder="Daytime Phone" name="phone">
-					<input placeholder="Best Time to Call" name="time">
-					<input type="submit" value="Continue">
-				</form>
+					
+					<div class="contactformbutton">
+						
+						<fieldset>
+
+							<form name="contactme" class="contactme" id="contactme" action="" method="post">
+
+								<input placeholder="Your Name" type="text" name="name" id="name" maxlength="100" autocomplete="off" autocapitalize="on" value="" />
+								<input placeholder="Your Email" type="text" name="email" id="email" autocomplete="off" autocapitalize="on" value="" />
+								<input placeholder="Daytime Phone" type="tel" name="phone" id="phone" maxlength="13" autocomplete="off" autocapitalize="on" value="" /> 
+								<input placeholder="Best Time to Call" type="text" name="time" id="time" max-length="100" autocomplete="off" autocapitalize="on" value="" />
+								<input type="submit" value="Continue">
+
+							</form>
+							<div id="results"></div>
+
+						</fieldset>
+
+					</div>
 			</section>
 		</div>
 
@@ -111,6 +132,30 @@
 	<script>
 
 		$( document ).ready(function() {
+
+			$('#contactme').validate({
+				debug: false,
+				rules: { 
+					name: { required: true, minlength:2 },
+					email: { required: true, email: true },
+					phone: { required:true, number:true, rangelength:[4,15] },
+					time: { required: true, minlength:2, }		
+				},
+
+				messages: {<? $msj='""'; /*you can insert here a customized error message*/ ?>      
+					name: <? echo $msj; ?>, 
+					email: <? echo $msj; ?>,
+					phone: <? echo $msj; ?>,
+					time: <? echo $msj; ?>
+				},
+
+				submitHandler: function(form) {
+					// do other stuff for a valid form
+					$.post('/contactme/process.php', $('#contactme').serialize(), function(data) {
+						$('#results').html(data);
+					});
+				}
+			});
 		  
 		  $('.mobile-menu-icon').on('click', function(){
 		  	$('header').toggleClass('open');
