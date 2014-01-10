@@ -1,35 +1,93 @@
 @import 'variables';
 
-.care {
-	.hero {
-		background: url(../../images/care-hero.jpg) no-repeat top center;
-		background-size: cover;
-		height: 390px;
-
-		@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
-			height: 180px;
-		}
-	}
-
-	.button {
-		background: $orange;
-		&:hover, &:focus {
-			background: darken($orange,10%); 
-		}
-	}
+.care, .doctors {
 
 	.main-content {
 		text-align: left;
+		padding-bottom: 65px;
+
+		ul {
+			margin: 25px 0 55px 0;
+			padding: 0;
+			li {
+				margin-right: 28px;
+				font-size: .77em;
+				font-weight: 700;
+				cursor: pointer;
+
+				.tab {
+					color: #959595;
+					&:hover, &:focus { color: darken(#959595,10%); }
+					&.selected { color: $orange; }
+				}
+			}
+		}
+
+		.description { font-size: 1em; line-height: 22px; }
+
+		hr {
+			height: 2px;
+			margin: 25px 0 30px 0;
+			border: 0;
+			background: $blue;
+		}
 
 		p {
 			font-size: 13px;
+			&.light { display: inline-block; font-size: 1em; }
+		}
+
+		.main {
+
+			&.slide {
+				display: none;
+
+				&.visible { display: block; }
+			}
+
+			.button {
+				width: auto;
+				margin-top: 3px;
+				padding: 12px 30px;
+				background: $orange;
+				&:hover, &:focus {
+					background: darken($orange,10%); 
+				}
+			}
 		}
 	}
+}
 
-	.headline {
+.doctors {
 
-		span {
-			color: $orange;
+	.residents {
+		min-height: 140px;
+		margin: 0;
+
+		img {
+			float: left;
+			width: 140px;
+			height: 140px;
+			margin: 0 24px 0 0;
+			@include border-radius(100%);
+			vertical-align: middle;
+		}
+
+		p {
+			margin: 0;
+			vertical-align: middle;
+			&.title, &.description { display: inline-block; margin: 30px 8px 0 0; }
+		}
+
+		&:nth-child(even) {
+			text-align: right;
+			img {
+				float: right;
+				margin: 0 0 0 24px;
+			}
+			p {
+				&.title, &.description { margin: 30px 0 0 8px; }
+			}
 		}
 	}
 }

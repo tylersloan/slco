@@ -2,6 +2,7 @@
 @import 'variables';
 
 .main-content {
+	position: relative;
 	width: 100%;
 	max-width: 945px;
 	margin: 0 auto;
@@ -27,8 +28,33 @@
 	}
 
 	aside {
-		float: right;
-		max-width: 385px;
+		position: absolute;
+		top: 80px;
+		right: 0;
+		max-width: 275px;
+		width: 275px;
+		padding: 100px 20px 0 20px;
+		border: {
+			width: 3px;
+			color: rgb( 235, 235, 235 );
+			style: solid;
+		}
+
+		span {
+			position: absolute;
+			top: -54px;
+			left: -23px;
+			width: 104px;
+			height: 104px;
+			padding-top: 34px;
+			color: white;
+			text-align: center;
+			font-size: 2.2em;
+			@include border-radius(100%);
+
+			.doctors & { background: $blue; }
+			.care & { background: $orange; }
+		}
 	}
 }
 
@@ -308,17 +334,16 @@ section {
 	max-width: 945px;
 	margin: 0 auto;
 	padding-bottom: 20px;
-	font-size: 14px;
+	font-size: .77em;
 	@include roboto;
 
 	ul {
 		display: inline-block;
 		
 		li {
-			display: inline-block;
-			list-style: none;
 			margin-right: 17px;
 			color: white;
+			text-transform: none;
 
 			@media screen and (max-width: 480px) {
 				margin-right: 10px;

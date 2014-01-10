@@ -12,17 +12,12 @@
 ::-moz-selection { background: $blue;  color: white; }
 
 input, textarea {
-  -webkit-transition: all 175ms ease-in-out;
-  -moz-transition: all 175ms ease-in-out;
-  -ms-transition: all 175ms ease-in-out;
-  -o-transition: all 175ms ease-in-out;
   outline: none;
   outline-offset: 0px;
   border: 2px solid $blue;
-
-  &:focus {
-  	border: 2px solid darken($blue,12%);
-  }
+	@include transition(175ms, all, ease-in-out);
+	&:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; }
+  &:focus { border: 2px solid darken($blue,12%); }
 }
 
 body {
@@ -56,6 +51,12 @@ a, a:visited {
 	}
 }
 
+li {
+	display: inline-block;
+	list-style: none;
+	text-transform: uppercase;
+}
+
 hr {
 	&.square {
 		width: 100%;
@@ -78,6 +79,8 @@ p {
 		@include roboto;
 		font-size: 1em;
 		font-weight: 300;
+		color: #959595;
+		line-height: 1.25;
 	}
 }
 
@@ -86,6 +89,7 @@ p {
 	font-size: .69em;
 	font-weight: 700;
 	color: $orange;
+	text-transform: uppercase;
 
 	@media screen and (max-width: 767px) {
 		margin-top: 14px;
@@ -119,9 +123,34 @@ p {
 	position: relative;
 	z-index: 0;
 	box-shadow: inset 0 2px 9px rgba(0, 0, 0, 0.35);
-	
+
+	.care & {
+		background: url(../../images/care-hero.jpg) no-repeat top center;
+		background-size: cover;
+		height: 390px;
+		@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
+			height: 180px;
+		}
+	}
+
+	.doctors & {
+		background: url(../../images/doctors-hero.jpg) no-repeat top center;
+		background-size: cover;
+		height: 390px;
+		@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
+			height: 180px;
+		}
+	}
+			
 	@media screen and (max-width: 700px) {
 		height: 325px;
+	}
+}
+
+.headline {
+	span {
+		.care & { color: $orange; }
+		.doctors & { color: $yellow; }
 	}
 }
 
@@ -132,8 +161,6 @@ p {
 	margin: 0 auto;
 	color: white;
 }
-
-// .banner, .headline { background: black; position: absolute; }
 
 .banner {
 	position: absolute;
@@ -179,6 +206,7 @@ p {
 		&.title {
 			font-weight: 700;
 			font-size: 1em;
+			color: white;
 			line-height: 1;
 			text-transform: uppercase;
 		}
