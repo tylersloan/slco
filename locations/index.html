@@ -1,39 +1,10 @@
-<?php
-$subjectPrefix = '[Contact form submission]';
-$emailTo = 'tyler.g.sloan@gmail.com';
-
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $name    = stripslashes(trim($_POST['name']));
-    $email   = stripslashes(trim($_POST['email']));
-    $phone = stripslashes(trim($_POST['phone']));
-    $message = stripslashes(trim($_POST['time-to-call']));
-
-    $emailIsValid = preg_match('/^[^0-9][A-z0-9._%+-]+([.][A-z0-9_]+)*[@][A-z0-9_]+([.][A-z0-9_]+)*[.][A-z]{2,4}$/', $email);
-
-    if($name && $email && $emailIsValid && $subject && $message){
-        $subject = "$subjectPrefix";
-        $body = "Name: $name <br /> Email: $email <br /> Best time to call: $time-to-call";
-
-        $headers  = 'MIME-Version: 1.1' . PHP_EOL;
-        $headers .= 'Content-type: text/html; charset=utf-8' . PHP_EOL;
-        $headers .= "From: $name <$email>" . PHP_EOL;
-        $headers .= "Return-Path: $emailTo" . PHP_EOL;
-        $headers .= "Reply-To: $email" . PHP_EOL;
-
-        mail($emailTo, $subject, $body, $headers);
-        $emailSent = true;
-    } else {
-        $hasError = true;
-    }
-}
-?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Carolina Oaks | Locations</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="../css/build/style.css">
-	<link rel="stylesheet" type="text/css" href="../css/build/care.css">
+	<link rel="stylesheet" type="text/css" href="../css/build/pages.css">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,500|Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="../css/icon-font.css">
 	<script src="../js/build/production.min.js"></script>
@@ -46,9 +17,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 	
 	<header>
 		<div class="header">
-			<div class="logo">
-				<h1><a href="../">Carolina Oaks</a></h1>
-			</div>
+			<a href="../" class="logo">Carolina Oaks</a>
 			<span class="mobile-menu-icon icon-menu2"></span>
 			<nav>
 				<ul>
@@ -201,7 +170,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 				<li><a href="/locations/">Locations</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
-			<p>Call 864.235.3949 to set up your next visit today.</p>
+			<p>Call <span>864.235.3949</span> to set up your next visit today.</p>
 		</div>		
 		
 	</footer>

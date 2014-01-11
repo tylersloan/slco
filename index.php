@@ -124,7 +124,7 @@
 				<li><a href="/locations/">Locations</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
-			<p>Call 864.235.3949 to set up your next visit today.</p>
+			<p>Call <span>864.235.3949</span> to set up your next visit today.</p>
 		</div>		
 		
 	</footer>

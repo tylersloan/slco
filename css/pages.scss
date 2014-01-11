@@ -28,6 +28,18 @@
 			padding: 20px 18px;
 			line-height: .7;
 		}
+
+		@media screen and (max-width: 568px) {
+			border: {
+				width: 1px;
+			}
+			p {
+				padding: 5px 18px;
+				line-height: 1.3;
+				font-size: 0.8em; 
+			}
+		}
+
 	}
 
 	.main-content {
@@ -56,7 +68,10 @@
 			}
 		}
 
-		.description { font-size: 1em; line-height: 22px; }
+		.description {
+			font-size: 1em;
+			line-height: 1.35;
+		}
 
 		hr {
 			height: 2px;
@@ -67,7 +82,13 @@
 
 		p {
 			font-size: 13px;
-			&.light { display: inline-block; font-size: 1em; }
+			&.light {
+				display: inline-block; font-size: 1em;
+				@media screen and (max-width: 480px) {
+					width: 100%;
+					display: block;
+				}
+			}
 		}
 
 		.main {
@@ -85,9 +106,32 @@
 				background: $orange;
 				font-size: 18px;
 
-				@media screen and (max-width: 768px) {
+				@media screen and (max-width: 900px) {
+					display: block;
 					float: none;
+					width: 180px;
 					margin-top: 15px;
+				}
+
+				@media screen and (max-width: 767px) {
+					float: right;
+					margin-top: 0;
+					margin-right: 0;
+					padding: 14px 30px;
+					width: 200px;
+				}
+
+				@media screen and (max-width: 600px) {
+					width: auto;
+					padding: 14px 15px;
+					font-size: 0.9em;
+				}
+
+				@media screen and (max-width: 480px) {
+					float: none;
+					display: block;
+					width: 100%;
+					margin: 20px auto;
 				}
 				
 				&:hover, &:focus {
@@ -111,8 +155,7 @@
 		margin: 0;
 
 		@media screen and (max-width: 767px) {
-			margin: -40px 0;
-
+			margin: 0px 0;
 		}
 			&:first-child { margin-top: 0;}
 
@@ -129,6 +172,14 @@
 				height: 110px;
 				margin: 0 15px 0 0;
 			}
+
+			@media screen and (max-width: 480px) {
+				// float: none;
+				// display: block;
+				// width: 95px;
+				// height: 95px;
+				// margin: 0 auto;
+			}
 		}
 
 		p {
@@ -138,6 +189,11 @@
 			@media screen and (max-width: 767px) {
 				max-width: 80%;
 				margin: 0 auto 0 0;
+			}
+
+			@media screen and (max-width: 480px) {
+				// text-align: center;
+				// margin: 10px auto 0 auto;
 			}
 
 			&.title, &.description {
@@ -153,6 +209,18 @@
 					display: inline-block;
 					margin: 30px 8px 0 0;
 				}
+
+				@media screen and (max-width: 480px) {
+					// display: block;
+					// margin: 10px auto 0 auto;
+					// text-align: center;
+				}
+			}
+
+			&.title {
+				@media screen and (max-width: 480px) {
+					// margin-top: 0;
+				}
 			}
 		}
 
@@ -161,6 +229,10 @@
 
 			@media screen and (max-width: 768px) {
 				margin: 15px 0 15px 0px;
+			}
+
+			@media screen and (max-width: 480px) {
+				margin: 0px;
 			}
 
 			img {
@@ -188,6 +260,33 @@
 					}
 				}
 			}
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.doctors {
+		.residents, .residents:nth-child(even) {
+			margin: 40px auto;
+			img {
+				float: none;
+				display: block;
+				width: 95px;
+				height: 95px;
+				margin: 0 auto;
+			}
+
+			p {
+				text-align: center;
+				margin: 10px auto 0 auto;
+				&.title, &.description {
+					display: block;
+					margin: 10px auto 0 auto;
+					text-align: center;
+				}
+				&.title { margin-top: 0; }
+			}
+
 		}
 	}
 }
