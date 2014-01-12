@@ -86,6 +86,18 @@ nav {
 			}
 			@include border-radius(3px);
 
+			&.selected {
+				@media screen and (max-width: 480px) {
+					border-top: none;
+					border-right: none;
+					border-left: none;
+					@include border-radius(0);
+				}
+			}
+			@media screen and (max-width: 768px) {
+				padding: 9px 7px;
+			}
+
 			@media screen and (max-width: 480px) {
 				display: block;
 				border-bottom: 1px solid lighten($blue, 40%);
@@ -115,7 +127,6 @@ nav {
 
 	&.down {
 		@include transform( translate3d(0,36px,0) );
-		// @include border-radius(100%);
 	}
 }
 
@@ -123,10 +134,6 @@ nav {
 	nav{
 		li {
 			&.selected {
-				border-top: none;
-				border-right: none;
-				border-left: none;
-				@include border-radius(0);
 				border-color: $yellow;
 				
 				@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
@@ -152,10 +159,6 @@ nav {
 	nav{
 		li {
 			&.selected {
-				border-top: none;
-				border-right: none;
-				border-left: none;
-				@include border-radius(0);
 				border-color: $orange;
 
 				@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
@@ -181,10 +184,6 @@ nav {
 	nav{
 		li {
 			&.selected {
-				border-top: none;
-				border-right: none;
-				border-left: none;
-				@include border-radius(0);
 				border-color: $blue;
 
 				@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
