@@ -20,7 +20,7 @@ header {
 		@include transition(175ms, all, ease-in-out);
 	}
 
-	&.open { height: 237px; }
+	&.open { height: 210px; }
 
 	.header {
 		max-width: 1180px;
