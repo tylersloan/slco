@@ -73,6 +73,24 @@
 				}
 			}
 
+			ul {
+				&.js-slides {
+					width: 75%;
+					height: 22px;
+
+					span {
+						top: 4px;
+						right: 10px;
+						width: 15px;
+						height: 15px;
+					}
+
+					li{
+						padding: 5px 10px;
+					}
+				}
+			}
+
 			.main {
 				> .description { margin: 0 0 0px 0; }
 				.description { line-height: 1.5; }	

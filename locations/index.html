@@ -32,25 +32,15 @@
 
 	<div class="hero">
 		<div id="map-canvas" class="map"></div>
-		<!-- <div class="responsive-wrapper"> -->
-		<!-- </div> -->
-		<!-- <div class="wrapper"> -->
-			<!-- <div class="banner">
-				<p>Call or text 864.235.3949 to set up your next visit today.</p>
-			</div>
-			<div class="headline">
-				<span class="icon-user"></span>
-				<p class="title">Doctors</p>
-				<p class="cond">Rest assured, when you&#8217;re with us your mouth is in good hands. Actually, good hands are in your mouth.</p>
-			</div> -->
-		<!-- </div> -->
 	</div>
 
 	<hr class="square"></hr>
 
 	<section class="main-content">
 
-		<ul>
+		<ul class="js-slides">
+			<span id="x" class="js-hide-options js-show-options"></span>
+			<li class="show-menu">Menu</li>
 			<li><a class="tab selected" id="loc-1">Location 1</a></li>
 			<li><a class="tab" id="loc-2">Location 2</a></li>
 			<li><a class="tab" id="loc-3">Location 3</a></li>
@@ -209,6 +199,36 @@
 		  	$('.slide').removeClass('visible');
 		  	$('.' + id).addClass('visible');
 		  });
+
+		  var windowWidth = $(window).width();
+		  var li = $('.tab')
+		  var liLength = li.length
+		  var liHeight = $('.js-slides').height()
+		  var multiplier = liLength + 1
+		  var ulHeight = multiplier*liHeight
+
+		  if(windowWidth < 481) {
+		  	
+		  	$('#x').on('click', function(){
+
+		  		if( $('#x').hasClass('js-show-options') ) {
+		  			console.log('show options clicked');
+		  			$(this).removeClass('js-show-options');
+		  			$('.js-slides').css({"height": ulHeight});
+		  		}
+		  		else {
+		  			console.log('hide options clicked');
+		  			$(this).addClass('js-show-options');
+		  			$('.js-slides').css({"height": liHeight});
+		  		};
+
+		  	});
+
+		  	$('.tab').on('click', function(){
+		  		$('#x').addClass('js-show-options');
+		  		$('.js-slides').css({"height": liHeight});
+		  	});
+		  };
 		  
 		});
 	

@@ -49,16 +49,63 @@
 		ul {
 			margin: 25px 0 55px 0;
 			padding: 0;
+			z-index: 0;
 
 			@media screen and (max-width: 768px) {
 				margin: 25px 0 25px 0;
 			}
+
+			@media screen and (max-width: 480px) {
+				position: relative;
+				width: 60%;
+				margin: 25px auto;
+				height: 39px;
+				@include border-radius(2px);
+				background: #EEE;
+				overflow: hidden;
+				@include transition(175ms, height, ease-in-out);
+			}
+
+			@media screen and (max-width: 320px) {
+				width: 100%;
+			}
+
+			span {
+				display: none;
+				position: absolute;
+				right: 10%;
+				top: 10px;
+				width: 21px;
+				height: 21px;
+				background: white;
+				z-index: 100;
+
+				@media screen and (max-width: 480px) { display: block; }
+			}
 			
 			li {
+				position: relative;
 				margin-right: 28px;
 				font-size: .77em;
 				font-weight: 700;
 				cursor: pointer;
+				z-index: 50;
+
+				&.show-menu {
+					display: none;
+					@media screen and (max-width: 480px) {
+						display: block;
+					}
+				}
+
+				@media screen and (max-width: 480px) {
+					display: block;
+					width: 70%;
+					margin-right: 0;
+					text-align: left;
+					padding: 9px 0 9px 10%;
+					@include transition(175ms, all, ease-in-out);
+				}
 
 				.tab {
 					color: #959595;
@@ -163,7 +210,8 @@
 		@media screen and (max-width: 767px) {
 			margin: 0px 0;
 		}
-			&:first-child { margin-top: 0;}
+		
+		&:first-child { margin-top: 0;}
 
 		img {
 			float: left;
@@ -177,14 +225,6 @@
 				width: 110px;
 				height: 110px;
 				margin: 0 15px 0 0;
-			}
-
-			@media screen and (max-width: 480px) {
-				// float: none;
-				// display: block;
-				// width: 95px;
-				// height: 95px;
-				// margin: 0 auto;
 			}
 		}
 

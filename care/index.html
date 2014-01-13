@@ -46,7 +46,9 @@
 
 	<section class="main-content">
 
-		<ul>
+		<ul class="js-slides">
+			<span id="x" class="js-hide-options js-show-options"></span>
+			<li class="show-menu">Menu</li>
 			<li><a class="tab selected" id="general">General Care</a></li>
 			<li><a class="tab" id="preventative">Preventitive</a></li>
 			<li><a class="tab" id="restorative">Restorative</a></li>
@@ -177,6 +179,36 @@
 		  	$('.slide').removeClass('visible');
 		  	$('.' + id).addClass('visible');
 		  });
+
+		  var windowWidth = $(window).width();
+		  var li = $('.tab')
+		  var liLength = li.length
+		  var liHeight = $('.js-slides').height()
+		  var multiplier = liLength + 1
+		  var ulHeight = multiplier*liHeight
+
+		  if(windowWidth < 481) {
+		  	
+		  	$('#x').on('click', function(){
+
+		  		if( $('#x').hasClass('js-show-options') ) {
+		  			console.log('show options clicked');
+		  			$(this).removeClass('js-show-options');
+		  			$('.js-slides').css({"height": ulHeight});
+		  		}
+		  		else {
+		  			console.log('hide options clicked');
+		  			$(this).addClass('js-show-options');
+		  			$('.js-slides').css({"height": liHeight});
+		  		};
+
+		  	});
+
+		  	$('.tab').on('click', function(){
+		  		$('#x').addClass('js-show-options');
+		  		$('.js-slides').css({"height": liHeight});
+		  	});
+		  };
 		  
 		});
 	
