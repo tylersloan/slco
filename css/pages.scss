@@ -74,11 +74,20 @@
 				display: none;
 				position: absolute;
 				right: 10%;
-				top: 10px;
-				width: 21px;
-				height: 21px;
-				background: white;
+				top: 12px;
+				width: 14px;
+				height: 14px;
 				z-index: 100;
+
+				&.js-hide-options {
+					background: url(../../images/x.png) no-repeat center center;
+					background-size: cover;
+
+					&.js-show-options {
+						background: url(../../images/arrow-down.png) no-repeat center center;
+						background-size: cover;						
+					}
+				}
 
 				@media screen and (max-width: 480px) { display: block; }
 			}
