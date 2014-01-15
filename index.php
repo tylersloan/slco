@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/build/style.css">
 	<link rel="stylesheet" type="text/css" href="css/build/home.css">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,500|Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="css/icon-font.css">
+	<link rel="stylesheet" type="text/css" href="font/icon-font.css">
 	<script src="js/build/production.min.js"></script>
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="//use.typekit.net/gfr3hyo.js"></script>
@@ -25,9 +25,9 @@
 			<span class="mobile-menu-icon icon-menu2"></span>
 			<nav>
 				<ul>
-					<li><a href="/care/">Care</a></li>
-					<li><a href="../doctors/">Doctors</a></li>
-					<li><a href="../locations/">Locations</a></li>
+					<li><a href="care">Care</a></li>
+					<li><a href="doctors">Doctors</a></li>
+					<li><a href="locations">Locations</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
@@ -115,9 +115,9 @@
 		<div class="footer-nav">
 			<ul>
 				<li>&copy; 2013 Carolina Oaks</li>
-				<li><a href="/care/">Care</a></li>
-				<li><a href="/doctors/">Doctors</a></li>
-				<li><a href="/locations/">Locations</a></li>
+				<li><a href="care">Care</a></li>
+				<li><a href="doctors">Doctors</a></li>
+				<li><a href="locations">Locations</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 			<p>Call <span>864.235.3949</span> to set up your next visit today.</p>
