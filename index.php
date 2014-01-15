@@ -12,10 +12,6 @@
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="//use.typekit.net/gfr3hyo.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
-	<style type="text/css">
-	.contactformbutton input.error, .contactformbutton textarea.error { background: white url('images/exclamation.png') no-repeat 95% center; background-size: 4px; border: 2px solid #a01515; }
-	</style>
 	
 </head>
 <body class="home">
@@ -95,7 +91,7 @@
 			</section>
 			<section class="half-width">
 					
-					<div class="contactformbutton">
+					<div id="contact" class="contactformbutton">
 						
 						<fieldset>
 
@@ -153,6 +149,7 @@
 					// do other stuff for a valid form
 					$.post('contactme/process.php', $('#contactme').serialize(), function(data) {
 						$('#results').html(data);
+						$(this).reset();
 					});
 				}
 			});

@@ -33,7 +33,9 @@ input, textarea {
 input[type='text'],input[type='tel'],textarea {
 	font-size:16px;
 	width: 48.8%;
-	}
+}
+
+.contactformbutton input.error, .contactformbutton textarea.error { background: white url('images/exclamation.png') no-repeat 95% center; background-size: 4px; border: 2px solid #a01515; }
 
 .results {
 	@include roboto-cond;

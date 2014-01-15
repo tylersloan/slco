@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>Carolina Oaks | Doctors</title>
+	<title>Carolina Oaks | Care</title>
 	<!-- <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="../css/build/pages.css">
@@ -9,10 +9,11 @@
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,500|Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="../css/icon-font.css">
 	<script src="../js/build/production.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="//use.typekit.net/gfr3hyo.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
-<body class="doctors">
+<body class="care">
 	
 	<header>
 		<div class="header">
@@ -20,8 +21,8 @@
 			<span class="mobile-menu-icon icon-menu2"></span>
 			<nav>
 				<ul>
-					<li><a href="/care/">Care</a></li>
-					<li class="selected"><a href="../doctors/">Doctors</a></li>
+					<li class="selected"><a href="/care/">Care</a></li>
+					<li><a href="../doctors/">Doctors</a></li>
 					<li><a href="../locations/">Locations</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
@@ -35,9 +36,9 @@
 				<p>Call or text 864.235.3949 to set up your next visit today.</p>
 			</div>
 			<div class="headline">
-				<span class="icon-user"></span>
-				<p class="title">Doctors</p>
-				<p class="cond">Rest assured, when you&#8217;re with us your mouth is in good hands. Actually, good hands are in your mouth.</p>
+				<span class="icon-heart"></span>
+				<p class="title">Care</p>
+				<p class="cond">Whether you&#8217;re visiting for a routine check-up or your first visit in years, we&#8217;ve got you covered.</p>
 			</div>
 		</div>
 	</div>
@@ -49,38 +50,19 @@
 		<ul class="js-slides">
 			<span id="x" class="js-hide-options js-show-options"></span>
 			<li class="show-menu">Menu</li>
-			<li><a class="tab selected" id="founders">Founders</a></li>
-			<li><a class="tab" id="loc-1">Location 1</a></li>
-			<li><a class="tab" id="loc-2">Location 2</a></li>
-			<li><a class="tab" id="loc-3">Location 3</a></li>
-			<li><a class="tab" id="loc-4">Location 4</a></li>
-			<li><a class="tab" id="loc-5">Location 5</a></li>
-			<li><a class="tab" id="loc-6">Location 6</a></li>
+			<li><a class="tab selected" id="general">General Care</a></li>
+			<li><a class="tab" id="preventative">Preventitive</a></li>
+			<li><a class="tab" id="restorative">Restorative</a></li>
+			<li><a class="tab" id="emergency">Emergency</a></li>
 		</ul>
 		
-		<div class="main slide visible founders">
-			<p class="title">Founders</p>
+		<div class="main slide visible general">
+			<p class="title">General</p>
 			<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum, vel lobortis nunc tincidunt quis. Fusce varius magna felis, a porttitor nisi porta. Quisque risus dolor, tempor id dui quis, consequat iaculis nisl. Sed odio dui, vitae enim ut, sagittis convallis sem. Aenean accumsan scelerisque volutpat.</p>
-			
-			<div class="residents">
-				<img src="https://pbs.twimg.com/profile_images/3112318888/e80ae42f356cc02511c8195ee75b234d.jpeg">
-				<p class="description">Wellington Payne, M.D.</p>
-				<p class="title">Resident Dentist</p>
-				<p>Ut quam lectus, blandit a viverra nec, scelerisque quis orci. Proin id aliquet nisi. In por ac dolor id dignissim. Pellentesque nisl massa, convallis vitae.</p>
-			</div>
-
-			<div class="residents">
-				<img src="https://pbs.twimg.com/profile_images/1179232792/DSC_0018-1-web.jpg">
-				<p class="description">Robbie Cobb, M.D.</p>
-				<p class="title">Resident Dentist</p>
-				<p>Ut quam lectus, blandit a viverra nec, scelerisque quis orci. Proin id aliquet nisi. In por ac dolor id dignissim. Pellentesque nisl massa, convallis vitae.</p>
-			</div>
-
-			<div class="residents">
-				<img src="https://pbs.twimg.com/profile_images/3694143905/d1a89cdcf9c910a85bcdaa4ed5acd83f.jpeg">
-				<p class="description">Tyler Sloan, M.D.</p>
-				<p class="title">Resident Dentist</p>
-				<p>Ut quam lectus, blandit a viverra nec, scelerisque quis orci. Proin id aliquet nisi. In por ac dolor id dignissim. Pellentesque nisl massa, convallis vitae.</p>
+			<div class="two-column">
+				<p>dyin' ain't much of a livin', boy. this is the ak-47 assault rifle, the preferred weapon of your enemy; and it makes a distinctive sound when fired at you, so remember it. you want a guarantee, buy a toaster. well, do you have anything to say for yourself? ever notice how sometimes you come across somebody you shouldn't have f**ked with? well, i'm that guy. what you have to ask yourself is, do i feel lucky. well do ya' punk? man's gotta know his limitations. well, do you have anything to say for yourself?</p>
+				<p>when a naked man's chasing a woman through an alley with a butcher knife and a hard-on, i figure he's not out collecting for the red cross. you see, in this world there's two kinds of people, my friend: those with loaded guns and those who dig. you dig. when a naked man's chasing a woman through an alley with a butcher knife and a hard-on, i figure he's not out collecting for the red cross. man's gotta know his limitations. when a naked man's chasing a woman through an alley with a butcher knife and a hard-on, i figure he's not out collecting for the red cross. don't p!ss down my back and tell me it's raining. ,</p>
+				<p>well do ya' punk? you see, in this world there's two kinds of people, my friend: those with loaded guns and those who dig. you dig. when a naked man's chasing a woman through an alley with a butcher knife and a hard-on, i figure he's not out collecting for the red cross. dyin' ain't much of a livin', boy. this is the ak-47 assault rifle, the preferred weapon of your enemy; and it makes a distinctive sound when fired at you, so remember it. this is my gun, clyde! dyin' ain't much of a livin', boy. </p>
 			</div>
 
 			<hr>
@@ -89,8 +71,8 @@
 			<a href="#0" class="button">Contact Us</a>
 		</div>
 
-		<div class="main slide loc-1">
-			<p class="title">Location 1</p>
+		<div class="main slide preventative">
+			<p class="title">Preventative</p>
 			<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum, vel lobortis nunc tincidunt quis. Fusce varius magna felis, a porttitor nisi porta. Quisque risus dolor, tempor id dui quis, consequat iaculis nisl. Sed odio dui, vitae enim ut, sagittis convallis sem. Aenean accumsan scelerisque volutpat.</p>
 			<div class="two-column">
 				<p>alrighty then excuse me, i'd like to ass you a few questions. brain freeze. look ma i'm road kill brain freeze. here she comes to wreck the day. look ma i'm road kill we're going for a ride on the information super highway. we got no food we got no money and our pets heads are falling off! haaaaaaarry.</p>
@@ -104,8 +86,8 @@
 			<a href="#0" class="button">Contact Us</a>
 		</div>
 
-		<div class="main slide loc-2">
-			<p class="title">Location 2</p>
+		<div class="main slide restorative">
+			<p class="title">Restorative</p>
 			<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum, vel lobortis nunc tincidunt quis. Fusce varius magna felis, a porttitor nisi porta. Quisque risus dolor, tempor id dui quis, consequat iaculis nisl. Sed odio dui, vitae enim ut, sagittis convallis sem. Aenean accumsan scelerisque volutpat.</p>
 			<div class="two-column">
 				<p>Ut quam lectus, blandit a viverra nec, scelerisque quis orci. Proin id aliquet nisi. In porttitor ac dolor id dignissim. Pellentesque nisl massa, convallis vitae dui vitae, bibendum egestas risus.</p>
@@ -120,8 +102,8 @@
 			<a href="#0" class="button">Contact Us</a>
 		</div>
 
-		<div class="main slide loc-3">
-			<p class="title">Location 3</p>
+		<div class="main slide emergency">
+			<p class="title">Emergency</p>
 			<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum, vel lobortis nunc tincidunt quis. Fusce varius magna felis, a porttitor nisi porta. Quisque risus dolor, tempor id dui quis, consequat iaculis nisl. Sed odio dui, vitae enim ut, sagittis convallis sem. Aenean accumsan scelerisque volutpat.</p>
 			<div class="two-column">
 				<p>cities fall but they are rebuilt. heroes die but they are remembered. cities fall but they are rebuilt. heroes die but they are remembered. multiply your anger by about a hundred, kate, that's how much he thinks he loves you. no, this is mount everest. you should flip on the discovery channel from time to time. but i guess you can't now, being dead and all. i now issue a new commandment: thou shalt do the dance. boxing is about respect. getting it for yourself, and taking it away from the other guy. circumstances have taught me that a man's ethics are the only possessions he will take beyond the grave. bruce... i'm god</p>
@@ -159,13 +141,24 @@
 				<p>Ut quam lectus, blandit a viverra nec, scelerisque quis orci. Proin id aliquet nisi. In porttitor ac dolor id dignissim. Pellentesque nisl massa, convallis vitae dui vitae, bibendum egestas risus.</p>
 			</section>
 			<section class="half-width">
-				<form id="contact" autocomplete="on" method="post">
-					<input placeholder="Your Name" name="name">
-					<input placeholder="Your Email" name="email">
-					<input placeholder="Daytime Phone" name="phone">
-					<input placeholder="Best Time to Call" name="time">
-					<input type="submit" value="Continue">
-				</form>
+				<div id="contact" class="contactformbutton">
+					
+					<fieldset>
+
+						<form name="contactme" class="contactme" id="contactme" action="" method="post">
+
+							<input placeholder="Your Name" type="text" name="name" id="name" maxlength="100" autocomplete="off" autocapitalize="on" value="" />
+							<input placeholder="Your Email" type="text" name="email" id="email" autocomplete="off" autocapitalize="on" value="" />
+							<input placeholder="Daytime Phone" type="tel" name="phone" id="phone" maxlength="13" autocomplete="off" autocapitalize="on" value="" /> 
+							<input placeholder="Best Time to Call" type="text" name="time" id="time" max-length="100" autocomplete="off" autocapitalize="on" value="" />
+							<input type="submit" value="Continue">
+
+						</form>
+						<div id="results"></div>
+
+					</fieldset>
+
+				</div>
 			</section>
 		</div>
 
@@ -184,7 +177,31 @@
 
 	<script>
 
-		$(window).load(function() {
+		$( document ).ready(function() {
+
+			$('#contactme').validate({
+				debug: false,
+				rules: { 
+					name: { required: true, minlength:2 },
+					email: { required: true, email: true },
+					phone: { required:true, number:true, rangelength:[4,15] },
+					time: { required: true, minlength:2, }		
+				},
+
+				messages: {<? $msj='""'; /*you can insert here a customized error message*/ ?>      
+					name: <? echo $msj; ?>, 
+					email: <? echo $msj; ?>,
+					phone: <? echo $msj; ?>,
+					time: <? echo $msj; ?>
+				},
+
+				submitHandler: function(form) {
+					// do other stuff for a valid form
+					$.post('../contactme/process.php', $('#contactme').serialize(), function(data) {
+						$('#results').html(data);
+					});
+				}
+			});
 		  
 		  $('.mobile-menu-icon').on('click', function(){
 		  	$('header').toggleClass('open');
