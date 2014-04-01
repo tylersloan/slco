@@ -89,6 +89,33 @@
 		padding-top: 22%;
 	}
 
+	.factoids-container {
+		position: absolute;
+		background: transparent;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		overflow: hidden;
+	}
+
+	section {
+		position: absolute;
+		@include transition(175ms, all, ease-in-out);
+
+		&.one {
+			@include transform(translate3d(0px, 0px, 0px));
+		}
+
+		&.two {
+			@include transform(translate3d(335px, 0px, 0px));
+		}
+
+		&.three {
+			@include transform(translate3d(670px, 0px, 0px));
+		}
+	}
+
 	h4 {
 		width: 79%;
 		margin: 90px auto 20px auto;
@@ -112,15 +139,53 @@
 	}
 
 	span {
-		position: relative;
-		top: -13px;
-		font-size: 1.15em;
-		color: $blue;
+		&.left, &.right {
+			position: absolute;
+			width: 39px;
+			height: 39px;
+			top: 50%;
+			margin-top: -19px;
+			background: $blue;
+			@include border-radius(100%);
+			font-size: 1.05em;
+			text-align: center;
+			color: white;
+			line-height: 2.1;
+		}
+
+		&.left { left: -16px; text-indent: -4px; }
+		&.right { right: -16px; text-indent: 4px; }
+
+		&.acorn {
+			position: relative;
+			top: -13px;
+			font-size: 1.15em;
+			color: $blue;
+		}
 	}
 
 	p {
 		width: 77%;
 		margin: 0 auto;
 		font-size: .7em;
+	}
+}
+
+
+.dots {
+	position: absolute;
+	bottom: 19px;
+	width: 100%;
+	text-align: center;
+
+	div {
+		display: inline-block;
+		width: 9px;
+		height: 9px;
+		margin: 0 3px;
+		background: $light-grey;
+		@include border-radius(100%);
+
+		&.filled { background: $orange; }
 	}
 }

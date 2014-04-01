@@ -137,6 +137,7 @@ p {
 }
 
 .more-details {
+	display: none; // get rid of it for now
 	font-size: .7em;
 }
 
@@ -155,7 +156,7 @@ p {
 	}
 
 	.doctors & {
-		background: url(../../images/doctors-hero.jpg) no-repeat top center;
+		background: url(../../images/dr-hero.jpg) no-repeat top center;
 		background-size: cover;
 		height: 390px;
 		@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {

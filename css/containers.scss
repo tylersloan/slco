@@ -191,6 +191,13 @@
 	vertical-align: top;
 	z-index: 0;
 
+	.home & {
+		text-align: center;
+		@media screen and (max-width: 767px) {
+			text-align: left;
+		}
+	}
+
 	@media screen and (max-width: 900px) {
 		width: 28%;
 		margin: -60px 1% 0 1%;
@@ -200,6 +207,7 @@
 		width: 70%;
 		max-width: 70%;
 		margin: 20px 0;
+		text-align: left;
 	}
 
 	@media screen and (max-width: 480px) {

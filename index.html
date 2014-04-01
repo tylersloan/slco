@@ -10,16 +10,13 @@
 	<link rel="stylesheet" type="text/css" href="font/icon-font.css">
 	<script src="js/build/production.min.js"></script>
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
-	
+
 </head>
 <body class="home">
 	
 	<header>
 		<div class="header">
 			<a href="../" class="logo">Carolina Oaks</a>
-			<!-- <div class="logo">
-				<h1><a href="../">Carolina Oaks</a></h1>
-			</div> -->
 			<span class="mobile-menu-icon icon-menu2"></span>
 			<nav>
 				<ul>
@@ -36,11 +33,35 @@
 		<div class="banner">
 			<p>Call or text 864.235.3949 to set up your next visit today.</p>
 		</div>
-		<div class="factoid">
-			<h4>Your smile says a lot about you. That's why it's so important to us.</h4>
-			<hr>
-			<span class="icon-acorn"></span>
-			<p>Ut quam lectus, blandit a viverra nec, scelerisque quis orci. Proin id aliquet nisi. In porttitor ac dolor id dignissim. Pellentesque nisl massa, convallis vitae dui vitae, bibendum egestas risus.</p>
+
+		<div class="factoid" id="one">
+			<span id="pre" class="icon-arrow-left left"></span>
+			<span id="next" class="icon-arrow-right right"></span>
+			<div class="factoids-container">
+				<section data-slide="1" id="js-one" class="fact one">
+					<h4>Your smile says a lot about you. That's why it's so important to us.</h4>
+					<hr>
+					<span class="icon-acorn acorn"></span>
+					<p>Ut quam lectus, blandit a viverra nec, scelerisque quis orci. Proin id aliquet nisi. In porttitor ac dolor id dignissim. Pellentesque nisl massa, convallis vitae dui vitae, bibendum egestas risus.</p>
+				</section>
+				<section data-slide="2" id="js-two" class="fact two">
+					<h4>Your smile says a lot about you. That's why it's so important to us.</h4>
+					<hr>
+					<span class="icon-acorn acorn"></span>
+					<p>Ut quam lectus, blandit a viverra nec, scelerisque quis orci. Proin id aliquet nisi. In porttitor ac dolor id dignissim. Pellentesque nisl massa, convallis vitae dui vitae, bibendum egestas risus.</p>
+				</section>
+				<section data-slide="3" id="js-three" class="fact three">
+					<h4>Your smile says a lot about you. That's why it's so important to us.</h4>
+					<hr>
+					<span class="icon-acorn acorn"></span>
+					<p>Ut quam lectus, blandit a viverra nec, scelerisque quis orci. Proin id aliquet nisi. In porttitor ac dolor id dignissim. Pellentesque nisl massa, convallis vitae dui vitae, bibendum egestas risus.</p>
+				</section>
+			</div>
+			<div class="dots">
+				<div class="filled"></div>
+				<div></div>
+				<div></div>
+			</div>
 		</div>
 	</div>
 
@@ -78,7 +99,7 @@
 	</section>
 
 	<footer>
-		<section id="contact" class="empathy">
+		<section class="empathy">
 			<p class="cond">Hey, we get it. Going to the dentist can be difficult.<br>It doesn&#8217;t have to be. We&#8217;ll even help you get started.</p>
 		</section>
 
@@ -89,7 +110,7 @@
 			</section>
 			<section class="half-width">
 					
-					<div class="contactformbutton">
+					<div id="contact" class="contactformbutton">
 						
 						<fieldset>
 
@@ -116,6 +137,7 @@
 				<li><a href="care">Care</a></li>
 				<li><a href="doctors">Doctors</a></li>
 				<li><a href="locations">Locations</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 			<p>Call <span>864.235.3949</span> to set up your next visit today.</p>
 		</div>		
@@ -126,30 +148,32 @@
 
 		$( document ).ready(function() {
 
-			$('#contactme').validate({
-				debug: false,
-				rules: { 
-					name: { required: true, minlength:2 },
-					email: { required: true, email: true },
-					phone: { required:true, number:true, rangelength:[4,15] },
-					time: { required: true, minlength:2, }		
-				},
+			var fact = $('.fact')
+			var slide = fact.getAttribute('data-slide');
 
-				messages: {<? $msj='""'; /*you can insert here a customized error message*/ ?>      
-					name: <? echo $msj; ?>, 
-					email: <? echo $msj; ?>,
-					phone: <? echo $msj; ?>,
-					time: <? echo $msj; ?>
-				},
+			// $('#contactme').validate({
+			// 	debug: false,
+			// 	rules: { 
+			// 		name: { required: true, minlength:2 },
+			// 		email: { required: true, email: true },
+			// 		phone: { required:true, number:true, rangelength:[4,15] },
+			// 		time: { required: true, minlength:2, }		
+			// 	},
 
-				submitHandler: function(form) {
-					// do other stuff for a valid form
-					$.post('contactme/process.php', $('#contactme').serialize(), function(data) {
-						$('#results').html(data);
-						$(this).reset();
-					});
-				}
-			});
+			// 	messages: {<? $msj='""'; you can insert here a customized error message ?>      
+			// 		name: <? echo $msj; ?>, 
+			// 		email: <? echo $msj; ?>,
+			// 		phone: <? echo $msj; ?>,
+			// 		time: <? echo $msj; ?>
+			// 	},
+
+			// 	submitHandler: function(form) {
+			// 		$.post('contactme/process.php', $('#contactme').serialize(), function(data) {
+			// 			$('#results').html(data);
+			// 			$(this).reset();
+			// 		});
+			// 	}
+			// });
 		  
 		  $('.mobile-menu-icon').on('click', function(){
 		  	$('header').toggleClass('open');

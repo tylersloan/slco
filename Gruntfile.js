@@ -21,16 +21,16 @@ module.exports = function(grunt) {
           }
         },
 
-        // imagemin: {
-        //   dynamic: {
-        //     files: [{
-	       //      expand: true,
-	       //      cwd: 'images/',
-	       //      src: ['**/*.{png,jpg,gif}'],
-	       //      dest: 'images/build/'
-        //     }]
-        //   }
-        // },
+        imagemin: {
+          dynamic: {
+            files: [{
+	            expand: true,
+	            cwd: 'images/',
+	            src: ['**/*.{png,jpg,gif}'],
+	            dest: 'images/build/'
+            }]
+          }
+        },
 
         watch: {
         	options: {
@@ -77,7 +77,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['concat', 'uglify', 'watch', 'sass']);
+    grunt.registerTask('default', ['concat', 'uglify', 'sass']);
     // grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'watch', 'sass']);
 
 };

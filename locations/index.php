@@ -41,13 +41,15 @@
 		<ul class="js-slides">
 			<span id="x" class="js-hide-options js-show-options"></span>
 			<li class="show-menu">Menu</li>
-			<li><a class="tab selected" id="loc-1">Location 1</a></li>
-			<li><a class="tab" id="loc-2">Location 2</a></li>
-			<li><a class="tab" id="loc-3">Location 3</a></li>
+			<li><a class="tab selected" id="loc-greenville">Greenville</a></li>
+			<li><a class="tab" id="loc-berea">Berea</a></li>
+			<li><a class="tab" id="loc-clemson">Clemson</a></li>
+			<li><a class="tab" id="loc-north-greenville">North Greenville</a></li>
+			<li><a class="tab" id="loc-anderson">Anderson</a></li>
 		</ul>
 		
-		<div class="main slide visible loc-1">
-			<p class="title">Our Greenville Location</p>
+		<div class="main slide visible loc-greenville">
+			<p class="title">Pleasantburg Dr Office/Greenville Office</p>
 			<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum, vel lobortis nunc tincidunt quis. Fusce varius magna felis, a porttitor nisi porta. Quisque risus dolor, tempor id dui quis, consequat iaculis nisl. Sed odio dui, vitae enim ut, sagittis convallis sem. Aenean accumsan scelerisque volutpat.</p>
 
 			<div class="third-width long">
@@ -60,7 +62,7 @@
 			<div class="third-width short">
 				<div class="entry">
 					<p class="title">Phone</p>
-					<p>800-123-4567</p>
+					<p>864-235-3949</p>
 				</div>
 			</div>
 
@@ -74,10 +76,10 @@
 			<div class="third-width long">
 				<div class="entry">
 					<p class="title">Address</p>
-					<p>101 Donnybrook Ave<br>Greenville, SC 29601</p>
+					<p>200 South Pleasantburg Drive<br>Greenville, SC 29607</p>
 				</div>
 			</div>
-			<div class="third-width short">
+			<!-- <div class="third-width short">
 				<div class="entry">
 					<p class="title">Follow Us</p>
 					<p>
@@ -85,17 +87,101 @@
 						<a href="http://facebook.com">Facebook</a>
 					</p>
 				</div>
+			</div> -->
+
+			<hr>
+
+			<p class="light">If you&#8217;re interested in general care or have an emergency, please let us know.</p>
+			<a href="#0" class="button">Contact Us</a>
+		</div>
+
+		<div class="main slide loc-berea">
+			<p class="title">Berea Office</p>
+			<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum, vel lobortis nunc tincidunt quis. Fusce varius magna felis, a porttitor nisi porta. Quisque risus dolor, tempor id dui quis, consequat iaculis nisl. Sed odio dui, vitae enim ut, sagittis convallis sem. Aenean accumsan scelerisque volutpat.</p>
+
+			<div class="third-width long">
+				<div class="entry">
+					<p class="title">Email</p>
+					<p>contact@carolinaoaks.com</p>
+				</div>
 			</div>
 
+			<div class="third-width short">
+				<div class="entry">
+					<p class="title">Phone</p>
+					<p>864-246-1811</p>
+				</div>
+			</div>
+
+			<div class="third-width">
+				<div class="entry">
+					<p class="title">Emergency Phone</p>
+					<p>800-987-6543</p>
+				</div>
+			</div>
+
+			<div class="third-width long">
+				<div class="entry">
+					<p class="title">Address</p>
+					<p>415 Farrs Bridge Road <br>Greenville, SC 29617</p>
+				</div>
+			</div>
+			<!-- <div class="third-width short">
+				<div class="entry">
+					<p class="title">Follow Us</p>
+					<p>
+						<a href="http://twitter.com">Twitter</a>
+						<a href="http://facebook.com">Facebook</a>
+					</p>
+				</div>
+			</div> -->
+
 			<hr>
 
 			<p class="light">If you&#8217;re interested in general care or have an emergency, please let us know.</p>
 			<a href="#0" class="button">Contact Us</a>
 		</div>
 
-		<div class="main slide loc-2">
-			<p class="title">2</p>
+		<div class="main slide loc-clemson">
+			<p class="title">Clemson Office</p>
 			<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum, vel lobortis nunc tincidunt quis. Fusce varius magna felis, a porttitor nisi porta. Quisque risus dolor, tempor id dui quis, consequat iaculis nisl. Sed odio dui, vitae enim ut, sagittis convallis sem. Aenean accumsan scelerisque volutpat.</p>
+
+			<div class="third-width long">
+				<div class="entry">
+					<p class="title">Email</p>
+					<p>contact@carolinaoaks.com</p>
+				</div>
+			</div>
+
+			<div class="third-width short">
+				<div class="entry">
+					<p class="title">Phone</p>
+					<p>864-654-6700</p>
+				</div>
+			</div>
+
+			<div class="third-width">
+				<div class="entry">
+					<p class="title">Emergency Phone</p>
+					<p>800-987-6543</p>
+				</div>
+			</div>
+
+			<div class="third-width long">
+				<div class="entry">
+					<p class="title">Address</p>
+					<p>1000 College Avenue<br>Clemson, SC 29631</p>
+				</div>
+			</div>
+			<!-- <div class="third-width short">
+				<div class="entry">
+					<p class="title">Follow Us</p>
+					<p>
+						<a href="http://twitter.com">Twitter</a>
+						<a href="http://facebook.com">Facebook</a>
+					</p>
+				</div>
+			</div> -->
 
 			<hr>
 
@@ -103,9 +189,93 @@
 			<a href="#0" class="button">Contact Us</a>
 		</div>
 
-		<div class="main slide loc-3">
-			<p class="title">3</p>
+		<div class="main slide loc-north-greenville">
+			<p class="title">North Greenville Office</p>
 			<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum, vel lobortis nunc tincidunt quis. Fusce varius magna felis, a porttitor nisi porta. Quisque risus dolor, tempor id dui quis, consequat iaculis nisl. Sed odio dui, vitae enim ut, sagittis convallis sem. Aenean accumsan scelerisque volutpat.</p>
+
+			<div class="third-width long">
+				<div class="entry">
+					<p class="title">Email</p>
+					<p>contact@carolinaoaks.com</p>
+				</div>
+			</div>
+
+			<div class="third-width short">
+				<div class="entry">
+					<p class="title">Phone</p>
+					<p>864-836-8416</p>
+				</div>
+			</div>
+
+			<div class="third-width">
+				<div class="entry">
+					<p class="title">Emergency Phone</p>
+					<p>800-987-6543</p>
+				</div>
+			</div>
+
+			<div class="third-width long">
+				<div class="entry">
+					<p class="title">Address</p>
+					<p>3037 Geer Hwy<br>Marietta, SC 29661</p>
+				</div>
+			</div>
+			<!-- <div class="third-width short">
+				<div class="entry">
+					<p class="title">Follow Us</p>
+					<p>
+						<a href="http://twitter.com">Twitter</a>
+						<a href="http://facebook.com">Facebook</a>
+					</p>
+				</div>
+			</div> -->
+
+			<hr>
+
+			<p class="light">If you&#8217;re interested in general care or have an emergency, please let us know.</p>
+			<a href="#0" class="button">Contact Us</a>
+		</div>
+
+		<div class="main slide loc-anderson">
+			<p class="title">Anderson Office</p>
+			<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum, vel lobortis nunc tincidunt quis. Fusce varius magna felis, a porttitor nisi porta. Quisque risus dolor, tempor id dui quis, consequat iaculis nisl. Sed odio dui, vitae enim ut, sagittis convallis sem. Aenean accumsan scelerisque volutpat.</p>
+
+			<div class="third-width long">
+				<div class="entry">
+					<p class="title">Email</p>
+					<p>contact@carolinaoaks.com</p>
+				</div>
+			</div>
+
+			<div class="third-width short">
+				<div class="entry">
+					<p class="title">Phone</p>
+					<p>864-261-3132</p>
+				</div>
+			</div>
+
+			<div class="third-width">
+				<div class="entry">
+					<p class="title">Emergency Phone</p>
+					<p>800-987-6543</p>
+				</div>
+			</div>
+
+			<div class="third-width long">
+				<div class="entry">
+					<p class="title">Address</p>
+					<p>3620 E River St<br>Anderson, SC 29621</p>
+				</div>
+			</div>
+			<!-- <div class="third-width short">
+				<div class="entry">
+					<p class="title">Follow Us</p>
+					<p>
+						<a href="http://twitter.com">Twitter</a>
+						<a href="http://facebook.com">Facebook</a>
+					</p>
+				</div>
+			</div> -->
 
 			<hr>
 
@@ -127,7 +297,7 @@
 	</section>
 
 	<footer>
-		<section class="empathy">
+		<section id="contact" class="empathy">
 			<p class="cond">Hey, we get it. Going to the dentist can be difficult.<br>It doesn&#8217;t have to be. We&#8217;ll even help you get started.</p>
 		</section>
 
@@ -137,7 +307,7 @@
 				<p>Ut quam lectus, blandit a viverra nec, scelerisque quis orci. Proin id aliquet nisi. In porttitor ac dolor id dignissim. Pellentesque nisl 
 			</section>
 			<section class="half-width">
-				<div id="contact" class="contactformbutton">
+				<div class="contactformbutton">
 					
 					<fieldset>
 
@@ -164,7 +334,6 @@
 				<li><a href="../care/">Care</a></li>
 				<li><a href="../doctors/">Doctors</a></li>
 				<li><a href="../locations/">Locations</a></li>
-				<li><a href="#contact">Contact</a></li>
 			</ul>
 			<p>Call <span>864.235.3949</span> to set up your next visit today.</p>
 		</div>		
