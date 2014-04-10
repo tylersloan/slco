@@ -42,7 +42,7 @@
 			<span id="x" class="js-hide-options js-show-options"></span>
 			<li class="show-menu">Menu</li>
 			<li><a class="tab selected" id="loc-greenville">Greenville</a></li>
-			<li><a class="tab" id="loc-berea">Berea</a></li>
+			<li><a class="tab" id="loc-west-greenville">West Greenville</a></li>
 			<li><a class="tab" id="loc-clemson">Clemson</a></li>
 			<li><a class="tab" id="loc-north-greenville">North Greenville</a></li>
 			<li><a class="tab" id="loc-anderson">Anderson</a></li>
@@ -95,14 +95,14 @@
 			<a href="#contact" class="button">Contact Us</a>
 		</div>
 
-		<div class="main slide loc-berea">
+		<div class="main slide loc-west-greenville">
 			<p class="title">Location Description</p>
-			<p class="description">The Berea Office for Carolina Oaks is on Farrs Bridge Road near the Westwood Shopping Center and the intersection with White Horse Road.</p>
+			<p class="description">The West Greenville Office for Carolina Oaks is on Farrs Bridge Road near the Westwood Shopping Center and the intersection with White Horse Road.</p>
 
 			<div class="third-width long">
 				<div class="entry">
 					<p class="title">Email</p>
-					<p>berea@carolinaoaks.com</p>
+					<p>westgreenville@carolinaoaks.com</p>
 				</div>
 			</div>
 
@@ -387,7 +387,7 @@
 				 */
 				var offices = [
 				  ['Greenville Office', 34.840954, -82.364133, 4],
-				  ['Berea Office', 34.888942, -82.466820, 2],
+				  ['West Greenville Office', 34.888942, -82.466820, 2],
 				  ['Clemson office', 34.704724, -82.833379, 3],
 				  ['North Greenville', 35.027710, -82.500744, 4],
 				  ['Anderson', 34.478281, -82.598196, 5]
@@ -403,15 +403,15 @@
 				  // Origins, anchor positions and coordinates of the marker
 				  // increase in the X direction to the right and in
 				  // the Y direction down.
-				  var image = {
-				    url: '../images/map-marker.svg',
-				    // This marker is 55 pixels wide by 77 pixels tall.
-				    size: new google.maps.Size(55, 77),
-				    // The origin for this image is 0,0.
-				    origin: new google.maps.Point(0,0),
-				    // The anchor for this image is the base of the flagpole at 0,77.
-				    anchor: new google.maps.Point(0, 77)
-				  };
+				  // var image = {
+				  //   url: '../images/map-marker.svg',
+				  //   // This marker is 55 pixels wide by 77 pixels tall.
+				  //   size: new google.maps.Size(55, 77),
+				  //   // The origin for this image is 0,0.
+				  //   origin: new google.maps.Point(0,0),
+				  //   // The anchor for this image is the base of the flagpole at 0,77.
+				  //   anchor: new google.maps.Point(0, 77)
+				  // };
 				  // Shapes define the clickable region of the icon.
 				  // The type defines an HTML &lt;area&gt; element 'poly' which
 				  // traces out a polygon as a series of X,Y points. The final
