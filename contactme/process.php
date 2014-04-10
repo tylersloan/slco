@@ -4,7 +4,7 @@
 usleep(500000);
 
 // edit email where contact form is sent
-$email_send_to = 'tyler.g.sloan@gmail.com';
+$email_send_to = 'appointments@carolina-oaks.com';
 // edit your domain
 $email_recived_from = 'carolina-oaks.com';
 // edit message for a successfully sent contact form

@@ -62,11 +62,9 @@
 
 		<div class="third-width appointment">
 			<span class="icon-iphone"></span>
-			<p class="title">Schedule and Appointment</p>
+			<p class="title">Schedule an Appointment</p>
 			<p class="description">Contact us to set up an appointment at one of our convenient locations across the Carolinas.</p>
-			<!-- <p class="more-details">
-				With years of experience and advanced technical training, our doctors are highly qualified to serve all of your dental needs. We would love to get you set up today!</p> -->
-			<a class="button" href="#0">Learn More</a>
+			<a class="button" href="#contact">Learn More</a>
 		</div>
 
 	</section>

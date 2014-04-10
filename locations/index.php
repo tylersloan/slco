@@ -92,7 +92,7 @@
 			<hr>
 
 			<p class="light">If you&#8217;re interested in general care or have an emergency, please let us know.</p>
-			<a href="#0" class="button">Contact Us</a>
+			<a href="#contact" class="button">Contact Us</a>
 		</div>
 
 		<div class="main slide loc-berea">
@@ -139,7 +139,7 @@
 			<hr>
 
 			<p class="light">If you&#8217;re interested in general care or have an emergency, please let us know.</p>
-			<a href="#0" class="button">Contact Us</a>
+			<a href="#contact" class="button">Contact Us</a>
 		</div>
 
 		<div class="main slide loc-clemson">
@@ -186,7 +186,7 @@
 			<hr>
 
 			<p class="light">If you&#8217;re interested in general care or have an emergency, please let us know.</p>
-			<a href="#0" class="button">Contact Us</a>
+			<a href="#contact" class="button">Contact Us</a>
 		</div>
 
 		<div class="main slide loc-north-greenville">
@@ -233,7 +233,7 @@
 			<hr>
 
 			<p class="light">If you&#8217;re interested in general care or have an emergency, please let us know.</p>
-			<a href="#0" class="button">Contact Us</a>
+			<a href="#contact" class="button">Contact Us</a>
 		</div>
 
 		<div class="main slide loc-anderson">
@@ -280,17 +280,17 @@
 			<hr>
 
 			<p class="light">If you&#8217;re interested in general care or have an emergency, please let us know.</p>
-			<a href="#0" class="button">Contact Us</a>
+			<a href="#contact" class="button">Contact Us</a>
 		</div>
 
 		<aside>
 
 			<span class="icon-iphone"></span>
 
-			<p class="title">Schedule and Appointment</p>
+			<p class="title">Schedule an Appointment</p>
 			<p class="description">Contact us to set up an appointment at one of our convenient locations across the Carolinas.</p>
 			<p>With years of experience and advanced technical training, our doctors are highly qualified to serve all of your dental needs. We would love to get you set up today!</p> 
-			<a href="#0" class="button">Schedule Visit</a>
+			<!-- <a href="#0" class="button">Schedule Visit</a> -->
 			
 		</aside>
 
@@ -368,12 +368,6 @@
 				},
 			});
 
-			// $(".contactme")[0].reset();
-
-				// $(".reset").click(function() {
-			 //    $(this).closest('form').find("input, textarea").val("");
-				// });
-
 				// multiple locations
 				function initialize() {
 				  var mapOptions = {
@@ -433,8 +427,8 @@
 				    var marker = new google.maps.Marker({
 				        position: myLatLng,
 				        map: map,
-				        icon: image,
-				        shape: shape,
+				        // icon: image,
+				        // shape: shape,
 				        title: office[0],
 				        zIndex: office[3]
 				    });
