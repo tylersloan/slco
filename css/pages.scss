@@ -109,7 +109,7 @@
 
 				@media screen and (max-width: 480px) {
 					display: block;
-					width: 70%;
+					width: 85%;
 					margin-right: 0;
 					text-align: left;
 					padding: 9px 0 9px 10%;
@@ -151,6 +151,12 @@
 
 			&.slide {
 				display: none;
+
+				.care & {
+					margin-bottom: 2em;
+
+					&:last-child { margin-bottom: 0; }
+				}
 
 				&.visible { display: block; }
 			}

@@ -10,16 +10,14 @@
 	<link rel="stylesheet" type="text/css" href="font/icon-font.css">
 	<script src="js/build/production.min.js"></script>
 	<script type="text/javascript" src="js/jquery.validate.min.js"></script>
-	
+	<script type="text/javascript" src="//use.typekit.net/ava6syz.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 <body class="home">
 	
 	<header>
 		<div class="header">
 			<a href="../" class="logo">Carolina Oaks</a>
-			<!-- <div class="logo">
-				<h1><a href="../">Carolina Oaks</a></h1>
-			</div> -->
 			<span class="mobile-menu-icon icon-menu2"></span>
 			<nav>
 				<ul>
@@ -34,13 +32,13 @@
 
 	<div class="hero">
 		<div class="banner">
-			<p>Call or text 864.235.3949 to set up your next visit today.</p>
+			<p>Contact us to set up your next visit today.</p>
 		</div>
 		<div class="factoid">
 			<h4>Your smile says a lot about you. That's why it's so important to us.</h4>
 			<hr>
 			<span class="icon-acorn"></span>
-			<p>Ut quam lectus, blandit a viverra nec, scelerisque quis orci. Proin id aliquet nisi. In porttitor ac dolor id dignissim. Pellentesque nisl massa, convallis vitae dui vitae, bibendum egestas risus.</p>
+			<p>Our team is dedicated to providing every patient with the best possible care in a relaxed, friendly environment. We accomplish this by combining the latest technologies with real relationships and care.</p>
 		</div>
 	</div>
 
@@ -52,8 +50,6 @@
 			<span class="icon-heart"></span>
 			<p class="title">Care</p>
 			<p class="description">Whether you&#8217;re visiting for a routine check-up or your first visit in years, we&#8217;ve got you covered.</p>
-			<p class="more-details">
-				Ut quam lectus, blandit a viverra nec, scelerisque quis orci. Proin id aliquet nisi. In porttitor ac dolor id dignissim. Pellentesque nisl massa, convallis vitae dui vitae, bibendum egestas risus.</p>
 			<a class="button" href="/care/">Learn More</a>
 		</div>
 
@@ -61,17 +57,15 @@
 			<span class="icon-user"></span>
 			<p class="title">Our Staff</p>
 			<p class="description">We staff the most skilled and trust-worthy dentists around to ensure a quality experience for you.</p>
-			<p class="more-details">
-				Pellentesque nisl massa, convallis vitae. Ut quam lectus, blandit a viverra nec, scele risque quis orci. Proin id aliquet nisi. In port titor ac dolor id dignissim.</p>
 			<a class="button" href="/doctors/">Learn More</a>
 		</div>
 
 		<div class="third-width appointment">
 			<span class="icon-iphone"></span>
 			<p class="title">Schedule and Appointment</p>
-			<p class="description">Text, call or email to set up an appointment at one of our many locations across the Carolinas.</p>
-			<p class="more-details">
-				Ut quam lectus, blandit a viverra nec, scelerisque quis orci. Proin id aliquet nisi. In porttitor ac dolor id dignissim. Pellentesque nisl massa, convallis vitae dui vitae, bibendum egestas risus.</p>
+			<p class="description">Contact us to set up an appointment at one of our convenient locations across the Carolinas.</p>
+			<!-- <p class="more-details">
+				With years of experience and advanced technical training, our doctors are highly qualified to serve all of your dental needs. We would love to get you set up today!</p> -->
 			<a class="button" href="#0">Learn More</a>
 		</div>
 
@@ -85,7 +79,7 @@
 		<div class="full-width">
 			<section class="half-width">
 				<p class="cond">Share some information, and we&#8217;ll gladly help set up your next visit.</p>
-				<p>Ut quam lectus, blandit a viverra nec, scelerisque quis orci. Proin id aliquet nisi. In porttitor ac dolor id dignissim. Pellentesque nisl massa, convallis vitae dui vitae, bibendum egestas risus.</p>
+				<p>With years of experience and advanced technical training, our doctors are highly qualified to serve all of your dental needs. We would love to get you set up today!</p>
 			</section>
 			<section class="half-width">
 					
@@ -112,7 +106,7 @@
 
 		<div class="footer-nav">
 			<ul>
-				<li>&copy; 2013 Carolina Oaks</li>
+				<li>&copy; 2014 Carolina Oaks</li>
 				<li><a href="care">Care</a></li>
 				<li><a href="doctors">Doctors</a></li>
 				<li><a href="locations">Locations</a></li>

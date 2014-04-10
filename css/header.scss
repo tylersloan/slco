@@ -33,7 +33,7 @@ header {
 	display: inline-block;
 	width: 260px;
 	height: 32px;
-	background: url(../../images/carolina-oaks-logo.png) no-repeat;
+	background: url(../../images/carolina-oaks-logo-ext.png) no-repeat;
 	background-size: 258px auto;
 	text-indent: -9999px;
 	line-height: .9;
@@ -68,7 +68,8 @@ nav {
 	
 	ul {
 		display: inline-block;
-		@include proxima;
+		@include roboto;
+		font-weight: bold;
 		font-size: 14px;
 		color: $blue;
 
