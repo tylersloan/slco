@@ -51,7 +51,7 @@
 			<span id="x" class="js-hide-options js-show-options"></span>
 			<li class="show-menu">Menu</li>
 			<li><a class="tab selected" id="loc-greenville">Greenville</a></li>
-			<li><a class="tab" id="loc-berea">Berea</a></li>
+			<li><a class="tab" id="loc-west-greenville">West Greenville</a></li>
 			<li><a class="tab" id="loc-clemson">Clemson</a></li>
 			<li><a class="tab" id="loc-north-greenville">North Greenville</a></li>
 			<li><a class="tab" id="loc-anderson">Anderson</a></li>
@@ -78,8 +78,8 @@
 			<a href="#contact" class="button">Contact Us</a>
 		</div>
 
-		<div class="main slide loc-berea">
-			<!-- <p class="title">Berea</p> -->
+		<div class="main slide loc-west-greenville">
+			<!-- <p class="title">West Greenville</p> -->
 			<!-- <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum, vel lobortis nunc tincidunt quis. Fusce varius magna felis, a porttitor nisi porta. Quisque risus dolor, tempor id dui quis, consequat iaculis nisl. Sed odio dui, vitae enim ut, sagittis convallis sem. Aenean accumsan scelerisque volutpat.</p> -->
 			
 			<div class="residents">
