@@ -126,6 +126,10 @@ p {
 		height: 180px;
 	}
 
+	@media screen and (max-width: 768px) {
+		margin-top: 67px
+	}
+
 	.care & {
 		background: url(../../images/care-hero.jpg) no-repeat top center;
 		background-size: cover;
@@ -254,6 +258,11 @@ p {
 
 		&:nth-child(even) { margin-right: 0; }
 
+		@media screen and (max-width: 900px) {
+			width: 100%;
+			margin-right: 0;
+		}
+
 		&.buttons {
 			width: 100%;
 		}
@@ -268,7 +277,7 @@ p {
 		-webkit-appearance: none;
 	  display: inline-block;
 	  float: left;
-		width: 100%;
+		width: 100% !important;
 	  margin: 0 10px 10px 0;
 	  padding: 5px 14px;
 	  @include roboto;
@@ -285,24 +294,24 @@ p {
 	  @include border-radius(2px);
 		@include transition(175ms, all, ease-in-out);
 
-		@media screen and (max-width: 1024px) {
-			width: 48%;
-		}
+		// @media screen and (max-width: 1024px) {
+		// 	width: 48%;
+		// }
 		
-		@media screen and (max-width: 900px) {
-			display: block;
-			width: 100%;
-		}
+		// @media screen and (max-width: 900px) {
+		// 	display: block;
+		// 	width: 100%;
+		// }
 
-		@media screen and (max-width: 768px) {
-			display: inline-block;
-			width: 49%;
-		}
+		// @media screen and (max-width: 768px) {
+		// 	display: inline-block;
+		// 	width: 49%;
+		// }
 
-		@media screen and (max-width: 600px) {
-			display: block;
-			width: 100%;
-		}
+		// @media screen and (max-width: 600px) {
+		// 	display: block;
+		// 	width: 100%;
+		// }
 		
 
 		&:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; color: rgb(149, 149, 149) !important; }
@@ -315,17 +324,6 @@ p {
 
 	select.select, .chosen-container {
 		position: relative;
-
-		// &:after {
-		// 	content: '';
-		// 	position: absolute;
-		// 	width: 6px;
-		// 	height: 6px;
-		// 	background: black;
-		// 	top: 50%;
-		// 	margin-top: -3px;
-		// 	right: 3px;
-		// }
 	}
 
 	input[type="submit"] {
@@ -342,21 +340,5 @@ p {
 		cursor: pointer;
 
 		&:hover, &:focus { background: darken($yellow, 12%); }
-
-		@media screen and (max-width: 1024px) {
-			width: 98.5%;
-		}
-
-		@media screen and (max-width: 900px) {
-			width: 100%;
-		}
-
-		@media screen and (max-width: 768px) {
-			width: 99.7%;
-		}
-
-		@media screen and (max-width: 600px) {
-			width: 100%;
-		}
 	}
 }

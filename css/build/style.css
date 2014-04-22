@@ -106,6 +106,9 @@ p.light {
   @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
     .hero {
       height: 180px; } }
+  @media screen and (max-width: 768px) {
+    .hero {
+      margin-top: 67px; } }
   .care .hero {
     background: url(../../images/care-hero.jpg) no-repeat top center;
     background-size: cover; }
@@ -865,6 +868,10 @@ section.half-width {
     vertical-align: bottom; }
     #container li:nth-child(even) {
       margin-right: 0; }
+    @media screen and (max-width: 900px) {
+      #container li {
+        width: 100%;
+        margin-right: 0; } }
     #container li.buttons {
       width: 100%; }
     #container li label {
@@ -874,7 +881,7 @@ section.half-width {
     -webkit-appearance: none;
     display: inline-block;
     float: left;
-    width: 100%;
+    width: 100% !important;
     margin: 0 10px 10px 0;
     padding: 5px 14px;
     font-family: 'Roboto', sans-serif;
@@ -895,21 +902,6 @@ section.half-width {
     -moz-transition: 175ms all ease-in-out;
     -o-transition: 175ms all ease-in-out;
     transition: 175ms all ease-in-out; }
-    @media screen and (max-width: 1024px) {
-      #container input, #container textarea, #container select, #container .chosen-container {
-        width: 48%; } }
-    @media screen and (max-width: 900px) {
-      #container input, #container textarea, #container select, #container .chosen-container {
-        display: block;
-        width: 100%; } }
-    @media screen and (max-width: 768px) {
-      #container input, #container textarea, #container select, #container .chosen-container {
-        display: inline-block;
-        width: 49%; } }
-    @media screen and (max-width: 600px) {
-      #container input, #container textarea, #container select, #container .chosen-container {
-        display: block;
-        width: 100%; } }
     #container input:-webkit-autofill, #container textarea:-webkit-autofill, #container select:-webkit-autofill, #container .chosen-container:-webkit-autofill {
       -webkit-box-shadow: 0 0 0px 1000px white inset;
       color: #959595 !important; }
@@ -942,15 +934,3 @@ section.half-width {
     cursor: pointer; }
     #container input[type="submit"]:hover, #container input[type="submit"]:focus {
       background: #feb017; }
-    @media screen and (max-width: 1024px) {
-      #container input[type="submit"] {
-        width: 98.5%; } }
-    @media screen and (max-width: 900px) {
-      #container input[type="submit"] {
-        width: 100%; } }
-    @media screen and (max-width: 768px) {
-      #container input[type="submit"] {
-        width: 99.7%; } }
-    @media screen and (max-width: 600px) {
-      #container input[type="submit"] {
-        width: 100%; } }

@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="../css/build/pages.css">
 	<link rel="stylesheet" type="text/css" href="../css/build/style.css">
+	<link rel="stylesheet" type="text/css" href="../js/chosen/chosen.css">
+	<link href="../carolina-oaks-contact/css/form.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,500|Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="../font/icon-font.css">
 	<script src="../js/build/production.min.js"></script>
@@ -308,46 +310,140 @@
 				<p>With years of experience and advanced technical training, our doctors are highly qualified to serve all of your dental needs. We would love to get you set up today!</p>
 			</section>
 			<section class="half-width">
-				<div class="contactformbutton">
-						
-						<fieldset>
 
-							<form name="contactme" class="contactme" id="contactme" action="" method="post">
+				<div class="ltr" id="container">
 
-								<!--[if lt IE 10]>
-									<label for="name">
-										Your Name:
-								<![endif]-->
-								<input placeholder="Your Name" type="text" name="name" id="name" maxlength="100" autocomplete="off" autocapitalize="on" value="" />
-								<!--[if lt IE 10]>
-									</label>
-									<label for="email">
-										Your Email:
-								<![endif]-->
-								<input placeholder="Your Email" type="text" name="email" id="email" autocomplete="off" autocapitalize="on" value="" />
-								<!--[if lt IE 10]>
-									</label>
-									<label for="phone">
-										Phone Number:
-								<![endif]-->
-								<input placeholder="Daytime Phone" type="tel" name="phone" id="phone" maxlength="13" autocomplete="off" autocapitalize="on" value="" />
-								<!--[if lt IE 10]>
-									</label>
-									<label for="time">
-										Best way to reach you:
-								<![endif]--> 
-								<input placeholder="Best way to reach you" type="text" name="time" id="time" max-length="100" autocomplete="off" autocapitalize="on" value="" />
-								<!--[if lt IE 10]>
-									</label>
-								<![endif]-->
-								<input type="submit" value="Submit">
+				  <form accept-charset="UTF-8" action="https://tylersloan.wufoo.com/forms/sfv3lag1xscrc8/#public" autocomplete="off" class="wufoo topLabel page" enctype="multipart/form-data" id="form5" method="post" name="form5" novalidate="">
+				    <header class="info" id="header">
+				      <h2>Carolina Oaks Contact</h2>
 
-							</form>
-							<div id="results"></div>
+				      <div>
+				        carolina-oaks.com
+				      </div>
+				    </header>
 
-						</fieldset>
+				    <ul>
+				      <li class="notranslate" id="foli3">
+				        <label class="desc" for="Field3" id="title3">Your Name: <span class="req" id="req_3">*</span></label>
 
-					</div>
+				        <div>
+				          <input class="field text medium" id="Field3" maxlength="255" name="Field3" onkeyup="" required="" tabindex="1" type="text" placeholder="Your Name">
+				        </div>
+				      </li>
+
+				      <li class="notranslate" id="foli5">
+				        <label class="desc" for="Field5" id="title5">Your Email <span class="req" id="req_5">*</span></label>
+
+				        <div>
+				          <input class="field text medium" id="Field5" maxlength="255" name="Field5" required="" spellcheck="false" tabindex="2" type="email" placeholder="Your Email">
+				        </div>
+				      </li>
+
+				      <li class="notranslate" id="foli8">
+				        <label class="desc" for="Field8" id="title8">Phone Number: <span class="req" id="req_8">*</span></label>
+
+				        <div>
+				          <input class="field text medium" id="Field8" maxlength="255" name="Field8" onkeyup="" required="" tabindex="3" type="text" placeholder="Phone Number">
+				        </div>
+				      </li>
+
+				      <li class="notranslate" id="foli6">
+				        <label class="desc" for="Field6" id="title6">Reason for Your Inquiry: <span class="req" id="req_6">*</span></label>
+
+				        <div>
+				          <select class="field select medium chosen" id="Field6" name="Field6" tabindex="4">
+				            <option selected="selected" value="Select One:">
+				              Select One:
+				            </option>
+
+				            <option value="Cleaning">
+				              Cleaning
+				            </option>
+
+				            <option value="Tooth Ache">
+				              Tooth Ache
+				            </option>
+
+				            <option value="Broken Tooth">
+				              Broken Tooth
+				            </option>
+
+				            <option value="General Info">
+				              General Info
+				            </option>
+
+				            <option value="Other">
+				              Other
+				            </option>
+				          </select>
+				        </div>
+				      </li>
+
+				      <li class="notranslate" id="foli9">
+				        <label class="desc" for="Field9" id="title9">Your Location: <span class="req" id="req_9">*</span></label>
+
+				        <div>
+				          <select class="field select medium chosen" id="Field9" name="Field9" tabindex="5">
+				            <option selected="selected" value="Select One:">
+				              Select One:
+				            </option>
+
+				            <option value="Anderson">
+				              Anderson
+				            </option>
+
+				            <option value="Clemson">
+				              Clemson
+				            </option>
+
+				            <option value="Greenville">
+				              Greenville
+				            </option>
+
+				            <option value="North Greenville">
+				              North Greenville
+				            </option>
+
+				            <option value="West Greenville">
+				              West Greenville
+				            </option>
+				          </select>
+				        </div>
+				      </li>
+
+				      <li class="notranslate" id="foli10">
+				        <label class="desc" for="Field10" id="title10">Best Way to Reach You <span class="req" id="req_10">*</span></label>
+
+				        <div>
+				          <select class="field select medium chosen" id="Field10" name="Field10" tabindex="6">
+				            <option selected="selected" value="Select One:">
+				              Select One:
+				            </option>
+
+				            <option value="Email">
+				              Email
+				            </option>
+
+				            <option value="Phone">
+				              Phone
+				            </option>
+				          </select>
+				        </div>
+				      </li>
+
+				      <li class="buttons">
+				        <div>
+				          <input class="btTxt submit" id="saveForm" name="saveForm" type="submit" value="Submit">
+				        </div>
+				      </li>
+
+				      <li class="hide"><label for="comment">Do Not Fill This Out</label> 
+				      <textarea cols="1" id="comment" name="comment" rows="1">
+				  </textarea> <input id="idstamp" name="idstamp" type="hidden" value="E6dH48zME4FOz4NHd0TUm4Hq+0qwvcyKE3+D27Tlcbc="></li>
+				    </ul>
+				  </form>
+				</div><!--container-->
+				
 			</section>
 		</div>
 
@@ -363,9 +459,16 @@
 		
 	</footer>
 
+	<script src="../carolina-oaks-contact/scripts/wufoo.js"></script>
+	<script src="../js/chosen/chosen.jquery.min.js"></script>
+
 	<script>
 
 		$(document).ready(function() {
+
+			$('.chosen').chosen({
+				"disable_search": true
+			});
 
 			$('#contactme').validate({
 				debug: false,

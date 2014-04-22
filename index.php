@@ -96,55 +96,48 @@
 				<div class="ltr" id="container">
 
 				  <form accept-charset="UTF-8" action="https://tylersloan.wufoo.com/forms/sfv3lag1xscrc8/#public" autocomplete="off" class="wufoo topLabel page" enctype="multipart/form-data" id="form5" method="post" name="form5" novalidate="">
+				    <header class="info" id="header">
+				      <h2>Carolina Oaks Contact</h2>
+
+				      <div>
+				        carolina-oaks.com
+				      </div>
+				    </header>
 
 				    <ul>
 				      <li class="notranslate" id="foli3">
-				    		<!--[if lt IE 10]>
-				        <label class="desc" for="Field3" id="title3">
-				        	Your Name: 
-				        	<span class="req" id="req_3">*</span>
-				        </label>
-				        <![endif]-->
+				        <label class="desc" for="Field3" id="title3">Your Name: <span class="req" id="req_3">*</span></label>
 
 				        <div>
-				          <input class="field text medium" id="Field3" maxlength="255" name="Field3" onkeyup="validateRange(3, 'word');" required="" tabindex="1" type="text" placeholder="Your Name" value="">
+				          <input class="field text medium" id="Field3" maxlength="255" name="Field3" onkeyup="" required="" tabindex="1" type="text" placeholder="Your Name">
 				        </div>
 				      </li>
 
 				      <li class="notranslate" id="foli5">
-				        <!--[if lt IE 10]>
-				        <label class="desc" for="Field5" id="title5">
-				        	Your Email: 
-				        	<span class="req" id="req_5">*</span>
-				        </label>
-				        <![endif]-->
+				        <label class="desc" for="Field5" id="title5">Your Email <span class="req" id="req_5">*</span></label>
 
 				        <div>
-				          <input class="field text medium" id="Field5" maxlength="255" name="Field5" required="" spellcheck="false" tabindex="2" type="email" placeholder="Your Email" value="">
+				          <input class="field text medium" id="Field5" maxlength="255" name="Field5" required="" spellcheck="false" tabindex="2" type="email" placeholder="Your Email">
 				        </div>
 				      </li>
 
 				      <li class="notranslate" id="foli8">
-				        <!--[if lt IE 10]>
-				        <label class="desc" for="Field8" id="title8">
-				        	Phone Number: 
-				        	<span class="req" id="req_8">*</span>
-				        </label>
-				        <![endif]-->
+				        <label class="desc" for="Field8" id="title8">Phone Number: <span class="req" id="req_8">*</span></label>
 
 				        <div>
-				          <input class="field text medium" id="Field8" maxlength="10" name="Field8" onkeyup="validateRange(8, 'character');" required="" tabindex="3" type="text" placeholder="Phone Number" value="">
+				          <input class="field text medium" id="Field8" maxlength="255" name="Field8" onkeyup="" required="" tabindex="3" type="text" placeholder="Phone Number">
 				        </div>
 				      </li>
 
 				      <li class="notranslate" id="foli6">
-				        <label class="desc" for="Field6" id="title6">Reason for Your Inquiry: 
-				        	<span class="req" id="req_6">*</span>
-				        </label>
+				        <label class="desc" for="Field6" id="title6">Reason for Your Inquiry: <span class="req" id="req_6">*</span></label>
 
 				        <div>
-				          <select class="field select medium chosen" id="Field6" name="Field6" tabindex="4" data-placeholder="Select One:">
-				          	<option></option>
+				          <select class="field select medium chosen" id="Field6" name="Field6" tabindex="4">
+				            <option selected="selected" value="Select One:">
+				              Select One:
+				            </option>
+
 				            <option value="Cleaning">
 				              Cleaning
 				            </option>
@@ -172,8 +165,10 @@
 				        <label class="desc" for="Field9" id="title9">Your Location: <span class="req" id="req_9">*</span></label>
 
 				        <div>
-				          <select class="field select medium chosen" id="Field9" name="Field9" tabindex="5" data-placeholder="Select One:">
-				            <option></option>
+				          <select class="field select medium chosen" id="Field9" name="Field9" tabindex="5">
+				            <option selected="selected" value="Select One:">
+				              Select One:
+				            </option>
 
 				            <option value="Anderson">
 				              Anderson
@@ -202,8 +197,10 @@
 				        <label class="desc" for="Field10" id="title10">Best Way to Reach You <span class="req" id="req_10">*</span></label>
 
 				        <div>
-				          <select class="field select medium chosen" id="Field10" name="Field10" tabindex="6" data-placeholder="Select One:">
-				            <option></option>
+				          <select class="field select medium chosen" id="Field10" name="Field10" tabindex="6">
+				            <option selected="selected" value="Select One:">
+				              Select One:
+				            </option>
 
 				            <option value="Email">
 				              Email
@@ -224,9 +221,10 @@
 
 				      <li class="hide"><label for="comment">Do Not Fill This Out</label> 
 				      <textarea cols="1" id="comment" name="comment" rows="1">
-				</textarea> <input id="idstamp" name="idstamp" type="hidden" value="E6dH48zME4FOz4NHd0TUm4Hq+0qwvcyKE3+D27Tlcbc="></li>
+				  </textarea> <input id="idstamp" name="idstamp" type="hidden" value="E6dH48zME4FOz4NHd0TUm4Hq+0qwvcyKE3+D27Tlcbc="></li>
 				    </ul>
 				  </form>
+				  
 				</div><!--container-->
 				
 			</section>
@@ -251,7 +249,9 @@
 
 		$( document ).ready(function() {
 
-			$('.chosen').chosen();
+			$('.chosen').chosen({
+				"disable_search": true
+			});
 
 			$('#contactme').validate({
 				debug: false,
