@@ -1,22 +1,4 @@
-/* ----- Logo ----- */
-
-#logo a {
-	background-image:url('../images/wflogo.png'); 
-	min-height:0;
-	height:40px;
-}
-* html #logo a {/* IE6 png Support */
-	background-image: none;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../images/wflogo.png", sizingMethod="crop");
-}
-
-/* ----- Backgrounds ----- */
-html{
-	background-image:none;	background-color:#FFFFFF;
-}
-#logo{
-	background-image:none;	background-color:#DEDEDE;
-}
+/*
 #container, html.embed{
 	background-color:#FFFFFF;
 }
@@ -32,10 +14,8 @@ html{
 	background-color:#F5F5F5;
 }
 
-/* ----- Borders ----- */
-#container{
-	border:1px solid #CCCCCC;
-}
+
+
 .wufoo .info, .wufoo .paging-context{
 	border-bottom:1px dotted #CCCCCC;
 }
@@ -55,7 +35,7 @@ html{
 	border-color:#dedede;
 }
 
-/* ----- Typography ----- */
+
 .wufoo .info h2{
 	font-size:160%;
 	font-family:inherit;
@@ -116,7 +96,7 @@ html{
 	font-family:inherit;
 	color:#444444;
 }
-.safari .wufoo input.file{ /* Webkit */
+.safari .wufoo input.file{ 
 	font-size:100%;
 	font-family:inherit;
 	color:#444444;
@@ -135,13 +115,13 @@ li.leftThird small, li.middleThird small, li.rightThird small,
 	color:#444444 !important;
 }
 
-/* ----- Button Styles ----- */
+
 
 .wufoo input.btTxt{
 
 }
 
-/* ----- Highlight Styles ----- */
+
 
 .wufoo li.focused label.desc, .wufoo li.focused legend.desc,
 .wufoo li.focused div, .wufoo li.focused span, .wufoo li.focused div label, .wufoo li.focused span label,
@@ -149,7 +129,7 @@ li.leftThird small, li.middleThird small, li.rightThird small,
 	color:#000000;
 }
 
-/* ----- Confirmation ----- */
+
 
 .confirm h2{
 	font-family:inherit;
@@ -162,7 +142,7 @@ a.powertiny b, a.powertiny em{
 	color:#1a1a1a !important;
 }
 
-/* ----- Pagination ----- */
+
 
 .pgStyle1 var, .pgStyle2 var, .pgStyle2 em, .page1 .pgStyle2 var, .pgStyle1 b, .wufoo .buttons .marker{
 	font-family:inherit;
@@ -184,7 +164,7 @@ a.powertiny b, a.powertiny em{
 }
 
 
-/* Likert Backgrounds */
+
 
 .likert table{
 	background-color:#FFFFFF;
@@ -196,7 +176,7 @@ a.powertiny b, a.powertiny em{
 	background-color:#f5f5f5;
 }
 
-/* Likert Borders */
+
 
 .likert table, .likert th, .likert td{
 	border-color:#dedede;
@@ -205,7 +185,7 @@ a.powertiny b, a.powertiny em{
 	border-left:1px solid #cccccc;
 }
 
-/* Likert Typography */
+
 
 .likert caption, .likert thead td, .likert tbody th label{
 	color:#444444;
@@ -219,7 +199,7 @@ a.powertiny b, a.powertiny em{
 	font-size:95%;
 }
 
-/* Likert Hover */
+
 
 .likert tbody tr:hover td, .likert tbody tr:hover th, .likert tbody tr:hover label{
 	background-color:#FFF7C0;
@@ -229,7 +209,7 @@ a.powertiny b, a.powertiny em{
 	border-left:1px solid #ccc69a;
 }
 
-/* ----- Running Total ----- */
+
 
 .wufoo #lola{
 	background:#e6e6e6;
@@ -245,7 +225,7 @@ a.powertiny b, a.powertiny em{
 	color:#696969;
 }
 
-/* ----- Report Styles ----- */
+
 
 .wufoo .wfo_graph h3{
 	font-size:95%;
@@ -262,7 +242,7 @@ a.powertiny b, a.powertiny em{
 	color:#444444;
 }
 
-/* ----- Number Widget ----- */
+
 
 .wfo_number{
 	background-color:#f5f5f5;
@@ -272,7 +252,7 @@ a.powertiny b, a.powertiny em{
 	color:#000000;
 }
 
-/* ----- Chart Widget Border and Background Colors ----- */
+
 
 #widget, #widget body{
 	background:#FFFFFF;
@@ -297,7 +277,7 @@ a.powertiny b, a.powertiny em{
 	background-color:#f5f5f5;
 }
 
-/* ----- Chart Widget Typography Colors ----- */
+
 
 .fc caption, .fcNav, .fcNav a{
 	color:#444444;
@@ -316,7 +296,7 @@ a.powertiny b, a.powertiny em{
 	color:#7d7d7d;
 }
 
-/* ----- Chart Widget Hover Colors ----- */
+
 
 .fc tbody tr:hover td, .fc tbody tr:hover th,
 .fc tfoot tr:hover td, .fc tfoot tr:hover th{
@@ -327,7 +307,7 @@ a.powertiny b, a.powertiny em{
 	color:#000000;
 }
 
-/* ----- Payment Summary ----- */
+
 
 .invoice thead th, 
 .invoice tbody th, .invoice tbody td,
@@ -350,11 +330,11 @@ a.powertiny b, a.powertiny em{
 	border-top:1px dotted #CCCCCC;
 }
 
-/* Drop Shadows */
 
-/* - - - Local Fonts - - - */
 
-/* - - - Responsive - - - */
+
+
+
 
 @media only screen and (max-width: 480px) {
 	html{
@@ -365,5 +345,6 @@ a.powertiny b, a.powertiny em{
 	}
 }
 
-/* - - - Custom Theme - - - */
 
+
+*/
