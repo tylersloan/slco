@@ -207,17 +207,12 @@
 				<div class="ltr" id="container">
 
 				  <form accept-charset="UTF-8" action="https://tylersloan.wufoo.com/forms/sfv3lag1xscrc8/#public" autocomplete="off" class="wufoo topLabel page" enctype="multipart/form-data" id="form5" method="post" name="form5" novalidate="">
-				    <header class="info" id="header">
-				      <h2>Carolina Oaks Contact</h2>
-
-				      <div>
-				        carolina-oaks.com
-				      </div>
-				    </header>
-
+				    
 				    <ul>
 				      <li class="notranslate" id="foli3">
+				      	<!--[if lt IE 10]>
 				        <label class="desc" for="Field3" id="title3">Your Name: <span class="req" id="req_3">*</span></label>
+				        <![endif]-->
 
 				        <div>
 				          <input class="field text medium" id="Field3" maxlength="255" name="Field3" onkeyup="" required="" tabindex="1" type="text" placeholder="Your Name">
@@ -225,7 +220,9 @@
 				      </li>
 
 				      <li class="notranslate" id="foli5">
+				      	<!--[if lt IE 10]>
 				        <label class="desc" for="Field5" id="title5">Your Email <span class="req" id="req_5">*</span></label>
+				        <![endif]-->
 
 				        <div>
 				          <input class="field text medium" id="Field5" maxlength="255" name="Field5" required="" spellcheck="false" tabindex="2" type="email" placeholder="Your Email">
@@ -233,7 +230,9 @@
 				      </li>
 
 				      <li class="notranslate" id="foli8">
+				      	<!--[if lt IE 10]>
 				        <label class="desc" for="Field8" id="title8">Phone Number: <span class="req" id="req_8">*</span></label>
+				        <![endif]-->
 
 				        <div>
 				          <input class="field text medium" id="Field8" maxlength="255" name="Field8" onkeyup="" required="" tabindex="3" type="text" placeholder="Phone Number">
