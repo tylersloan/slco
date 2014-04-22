@@ -8,7 +8,7 @@ $email_send_to = 'appointments@carolina-oaks.com';
 // edit your domain
 $email_recived_from = 'carolina-oaks.com';
 // edit message for a successfully sent contact form
-$success_msj = "Your information has been sent and we'll be in touch with you very soon! Thanks!";
+$success_msj = "Thank you! We’ve received your information.";
 // edit error message
 $error_msj = 'Whoops, something went wrong. Sorry about that. Please try again, or call 864.235.3949.';
 

@@ -8,6 +8,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,500|Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="../font/icon-font.css">
 	<script src="../js/build/production.min.js"></script>
+	<script src="../js/build/jquery.placeholder.js"></script>
 	<script type="text/javascript" src="../js/jquery.validate.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 	<script type="text/javascript" src="//use.typekit.net/ava6syz.js"></script>
@@ -55,7 +56,7 @@
 			<div class="third-width long">
 				<div class="entry">
 					<p class="title">Email</p>
-					<p>greenville@carolinaoaks.com</p>
+					<p>greenville@carolina-oaks.com</p>
 				</div>
 			</div>
 
@@ -66,12 +67,12 @@
 				</div>
 			</div>
 
-			<div class="third-width">
+			<!-- <div class="third-width">
 				<div class="entry">
 					<p class="title">Emergency Phone</p>
 					<p>800-987-6543</p>
 				</div>
-			</div>
+			</div> -->
 
 			<div class="third-width long">
 				<div class="entry">
@@ -102,7 +103,7 @@
 			<div class="third-width long">
 				<div class="entry">
 					<p class="title">Email</p>
-					<p>westgreenville@carolinaoaks.com</p>
+					<p>westgreenville@carolina-oaks.com</p>
 				</div>
 			</div>
 
@@ -113,12 +114,12 @@
 				</div>
 			</div>
 
-			<div class="third-width">
+			<!-- <div class="third-width">
 				<div class="entry">
 					<p class="title">Emergency Phone</p>
 					<p>800-987-6543</p>
 				</div>
-			</div>
+			</div> -->
 
 			<div class="third-width long">
 				<div class="entry">
@@ -149,7 +150,7 @@
 			<div class="third-width long">
 				<div class="entry">
 					<p class="title">Email</p>
-					<p>clemson@carolinaoaks.com</p>
+					<p>clemson@carolina-oaks.com</p>
 				</div>
 			</div>
 
@@ -160,12 +161,12 @@
 				</div>
 			</div>
 
-			<div class="third-width">
+			<!-- <div class="third-width">
 				<div class="entry">
 					<p class="title">Emergency Phone</p>
 					<p>800-987-6543</p>
 				</div>
-			</div>
+			</div> -->
 
 			<div class="third-width long">
 				<div class="entry">
@@ -196,7 +197,7 @@
 			<div class="third-width long">
 				<div class="entry">
 					<p class="title">Email</p>
-					<p>northgreenville@carolinaoaks.com</p>
+					<p>northgreenville@carolina-oaks.com</p>
 				</div>
 			</div>
 
@@ -207,12 +208,12 @@
 				</div>
 			</div>
 
-			<div class="third-width">
+			<!-- <div class="third-width">
 				<div class="entry">
 					<p class="title">Emergency Phone</p>
 					<p>800-987-6543</p>
 				</div>
-			</div>
+			</div> -->
 
 			<div class="third-width long">
 				<div class="entry">
@@ -243,7 +244,7 @@
 			<div class="third-width long">
 				<div class="entry">
 					<p class="title">Email</p>
-					<p>anderson@carolinaoaks.com</p>
+					<p>anderson@carolina-oaks.com</p>
 				</div>
 			</div>
 
@@ -254,12 +255,12 @@
 				</div>
 			</div>
 
-			<div class="third-width">
+			<!-- <div class="third-width">
 				<div class="entry">
 					<p class="title">Emergency Phone</p>
 					<p>800-987-6543</p>
 				</div>
-			</div>
+			</div> -->
 
 			<div class="third-width long">
 				<div class="entry">
@@ -308,35 +309,57 @@
 			</section>
 			<section class="half-width">
 				<div class="contactformbutton">
-					
-					<fieldset>
+						
+						<fieldset>
 
-						<form name="contactme" class="contactme" id="contactme" action="" method="post">
+							<form name="contactme" class="contactme" id="contactme" action="" method="post">
 
-							<input placeholder="Your Name" type="text" name="name" id="name" maxlength="100" autocomplete="off" autocapitalize="on" value="" />
-							<input placeholder="Your Email" type="text" name="email" id="email" autocomplete="off" autocapitalize="on" value="" />
-							<input placeholder="Daytime Phone" type="tel" name="phone" id="phone" maxlength="13" autocomplete="off" autocapitalize="on" value="" /> 
-							<input placeholder="Best Time to Call" type="text" name="time" id="time" max-length="100" autocomplete="off" autocapitalize="on" value="" />
-							<input class="reset" type="submit" value="Continue">
+								<!--[if lt IE 10]>
+									<label for="name">
+										Your Name:
+								<![endif]-->
+								<input placeholder="Your Name" type="text" name="name" id="name" maxlength="100" autocomplete="off" autocapitalize="on" value="" />
+								<!--[if lt IE 10]>
+									</label>
+									<label for="email">
+										Your Email:
+								<![endif]-->
+								<input placeholder="Your Email" type="text" name="email" id="email" autocomplete="off" autocapitalize="on" value="" />
+								<!--[if lt IE 10]>
+									</label>
+									<label for="phone">
+										Phone Number:
+								<![endif]-->
+								<input placeholder="Daytime Phone" type="tel" name="phone" id="phone" maxlength="13" autocomplete="off" autocapitalize="on" value="" />
+								<!--[if lt IE 10]>
+									</label>
+									<label for="time">
+										Best way to reach you:
+								<![endif]--> 
+								<input placeholder="Best way to reach you" type="text" name="time" id="time" max-length="100" autocomplete="off" autocapitalize="on" value="" />
+								<!--[if lt IE 10]>
+									</label>
+								<![endif]-->
+								<input type="submit" value="Submit">
 
-						</form>
-						<div id="results"></div>
+							</form>
+							<div id="results"></div>
 
-					</fieldset>
+						</fieldset>
 
-				</div>
+					</div>
 			</section>
 		</div>
 
 		<div class="footer-nav">
 			<ul>
 				<li>&copy; 2014 Carolina Oaks</li>
-				<li><a href="../care/">Care</a></li>
-				<li><a href="../doctors/">Doctors</a></li>
-				<li><a href="../locations/">Locations</a></li>
+				<li><a href="care">Care</a></li>
+				<li><a href="doctors">Doctors</a></li>
+				<li><a href="locations">Locations</a></li>
 			</ul>
-			<p>Call <span>864.235.3949</span> to set up your next visit today.</p>
-		</div>		
+			<p>Or Just simply email <span><a href="mailto:appointments@carolina-oaks.com?&subject=I'd Like an Appoointment">appointments@carolina-oaks.com</a></span> to set up your next visit today.</p>
+		</div>
 		
 	</footer>
 

@@ -3,7 +3,7 @@
 .home {
 	
 	.hero {
-		background: url(../../images/doctor.jpg) no-repeat top center;
+		background: url(../../images/home-slider-01.jpg) no-repeat top center;
 		background-size: cover;
 		height: 525px;
 
@@ -44,6 +44,18 @@
 			font-size: 1em;
 			line-height: 2.5;
 			font-weight: 300;
+
+			a {
+				color: white;
+				font-weight: bolder;
+				padding-bottom: 2px;
+				border-bottom: 2px solid;
+				@include transition(175ms, color, ease-in-out);
+
+				&:hover {
+					color: rgba(0,0,0,.5);
+				}
+			}
 
 			@media screen and (max-width: 480px) {
 				width: 80%;

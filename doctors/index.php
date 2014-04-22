@@ -9,6 +9,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,500|Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="../font/icon-font.css">
 	<script src="../js/build/production.min.js"></script>
+	<script src="../js/build/jquery.placeholder.js"></script>
 	<script type="text/javascript" src="../js/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="//use.typekit.net/ava6syz.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -33,7 +34,7 @@
 	<div class="hero">
 		<div class="wrapper">
 			<div class="banner">
-				<p>Contact us to set up your next visit today.</p>
+				<p><a href="#contact">Contact us</a> to set up your next visit today.</p>
 			</div>
 			<div class="headline">
 				<span class="icon-user"></span>
@@ -200,36 +201,58 @@
 				<p>With years of experience and advanced technical training, our doctors are highly qualified to serve all of your dental needs. We would love to get you set up today!</p>
 			</section>
 			<section class="half-width">
-				<div class="contactformbutton">
-					
-					<fieldset>
+							<div class="contactformbutton">
+								
+								<fieldset>
 
-						<form name="contactme" class="contactme" id="contactme" action="" method="post">
+									<form name="contactme" class="contactme" id="contactme" action="" method="post">
 
-							<input placeholder="Your Name" type="text" name="name" id="name" maxlength="100" autocomplete="off" autocapitalize="on" value="" />
-							<input placeholder="Your Email" type="text" name="email" id="email" autocomplete="off" autocapitalize="on" value="" />
-							<input placeholder="Daytime Phone" type="tel" name="phone" id="phone" maxlength="13" autocomplete="off" autocapitalize="on" value="" /> 
-							<input placeholder="Best Time to Call" type="text" name="time" id="time" max-length="100" autocomplete="off" autocapitalize="on" value="" />
-							<input type="submit" value="Continue">
+										<!--[if lt IE 10]>
+											<label for="name">
+												Your Name:
+										<![endif]-->
+										<input placeholder="Your Name" type="text" name="name" id="name" maxlength="100" autocomplete="off" autocapitalize="on" value="" />
+										<!--[if lt IE 10]>
+											</label>
+											<label for="email">
+												Your Email:
+										<![endif]-->
+										<input placeholder="Your Email" type="text" name="email" id="email" autocomplete="off" autocapitalize="on" value="" />
+										<!--[if lt IE 10]>
+											</label>
+											<label for="phone">
+												Phone Number:
+										<![endif]-->
+										<input placeholder="Daytime Phone" type="tel" name="phone" id="phone" maxlength="13" autocomplete="off" autocapitalize="on" value="" />
+										<!--[if lt IE 10]>
+											</label>
+											<label for="time">
+												Best way to reach you:
+										<![endif]--> 
+										<input placeholder="Best way to reach you" type="text" name="time" id="time" max-length="100" autocomplete="off" autocapitalize="on" value="" />
+										<!--[if lt IE 10]>
+											</label>
+										<![endif]-->
+										<input type="submit" value="Submit">
 
-						</form>
-						<div id="results"></div>
+									</form>
+									<div id="results"></div>
 
-					</fieldset>
+								</fieldset>
 
+							</div>
+					</section>
 				</div>
-			</section>
-		</div>
 
-		<div class="footer-nav">
-			<ul>
-				<li>&copy; 2014 Carolina Oaks</li>
-				<li><a href="../care/">Care</a></li>
-				<li><a href="../doctors/">Doctors</a></li>
-				<li><a href="../locations/">Locations</a></li>
-			</ul>
-			<p>Call <span>864.235.3949</span> to set up your next visit today.</p>
-		</div>		
+				<div class="footer-nav">
+					<ul>
+						<li>&copy; 2014 Carolina Oaks</li>
+						<li><a href="../care">Care</a></li>
+						<li><a href="../doctors">Doctors</a></li>
+						<li><a href="../locations">Locations</a></li>
+					</ul>
+					<p>Or Just simply email <span><a href="mailto:appointments@carolina-oaks.com?&subject=I'd Like an Appoointment">appointments@carolina-oaks.com</a></span> to set up your next visit today.</p>
+				</div>	
 		
 	</footer>
 

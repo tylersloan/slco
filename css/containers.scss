@@ -50,8 +50,12 @@
 		}
 
 		@media screen and (max-width: 768px) {
-			top: 50px;
-			.description { margin: 0px 0 20px 0; }
+			width: 255px;
+			top: 100px;
+			
+			.description {
+				margin: 0px 0 20px 0;
+			}
 		}
 
 		@media screen and (max-width: 767px) {
@@ -110,6 +114,11 @@
 			text-align: center;
 			font-size: 2.2em;
 			@include border-radius(100%);
+
+			@media screen and (max-width: 768px) {
+				left: 50%;
+				margin-left: -52px;
+			}
 
 			@media screen and (max-width: 767px) {
 				position: relative;

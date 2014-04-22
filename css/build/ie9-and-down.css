@@ -1,0 +1,8 @@
+label {
+  float: left;
+  width: 48.8%;
+}
+
+input[type='text'],input[type='tel'],textarea {
+  width: 100%;
+}

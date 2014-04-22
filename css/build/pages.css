@@ -1,3 +1,326 @@
-.care .banner,.doctors .banner,.locations .banner{position:absolute;display:inline-block;right:14px;top:42px;background:transparent;border-width:3px;border-color:white;border-style:solid;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}@media screen and (max-width: 768px){.care .banner,.doctors .banner,.locations .banner{display:block;position:relative;margin:0 auto;top:20px;right:auto;text-align:center}}.care .banner p,.doctors .banner p,.locations .banner p{padding:20px 18px;line-height:.7}@media screen and (max-width: 568px){.care .banner,.doctors .banner,.locations .banner{border-width:1px}.care .banner p,.doctors .banner p,.locations .banner p{padding:5px 18px;line-height:1.3;font-size:0.8em}}.care .main-content,.doctors .main-content,.locations .main-content{text-align:left;padding-bottom:65px}.care .main-content ul,.doctors .main-content ul,.locations .main-content ul{margin:25px 0 55px 0;padding:0;z-index:0}@media screen and (max-width: 768px){.care .main-content ul,.doctors .main-content ul,.locations .main-content ul{margin:25px 0 25px 0}}@media screen and (max-width: 480px){.care .main-content ul,.doctors .main-content ul,.locations .main-content ul{position:relative;width:60%;margin:25px auto;height:39px;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;background:#EEE;overflow:hidden;-webkit-transition:175ms height ease-in-out;-moz-transition:175ms height ease-in-out;-o-transition:175ms height ease-in-out;transition:175ms height ease-in-out}}@media screen and (max-width: 320px){.care .main-content ul,.doctors .main-content ul,.locations .main-content ul{width:100%}}.care .main-content ul span,.doctors .main-content ul span,.locations .main-content ul span{display:none;position:absolute;right:10%;top:12px;width:14px;height:14px;z-index:100}.care .main-content ul span.js-hide-options,.doctors .main-content ul span.js-hide-options,.locations .main-content ul span.js-hide-options{background:url(../../images/x.png) no-repeat center center;background-size:cover}.care .main-content ul span.js-hide-options.js-show-options,.doctors .main-content ul span.js-hide-options.js-show-options,.locations .main-content ul span.js-hide-options.js-show-options{background:url(../../images/arrow-down.png) no-repeat center center;background-size:cover}@media screen and (max-width: 480px){.care .main-content ul span,.doctors .main-content ul span,.locations .main-content ul span{display:block}}.care .main-content ul li,.doctors .main-content ul li,.locations .main-content ul li{position:relative;margin-right:28px;font-size:.77em;font-weight:700;cursor:pointer;z-index:50}.care .main-content ul li.show-menu,.doctors .main-content ul li.show-menu,.locations .main-content ul li.show-menu{display:none}@media screen and (max-width: 480px){.care .main-content ul li.show-menu,.doctors .main-content ul li.show-menu,.locations .main-content ul li.show-menu{display:block}}@media screen and (max-width: 480px){.care .main-content ul li,.doctors .main-content ul li,.locations .main-content ul li{display:block;width:85%;margin-right:0;text-align:left;padding:9px 0 9px 10%;-webkit-transition:175ms all ease-in-out;-moz-transition:175ms all ease-in-out;-o-transition:175ms all ease-in-out;transition:175ms all ease-in-out}}.care .main-content ul li .tab,.doctors .main-content ul li .tab,.locations .main-content ul li .tab{color:#959595}.care .main-content ul li .tab:hover,.care .main-content ul li .tab:focus,.doctors .main-content ul li .tab:hover,.doctors .main-content ul li .tab:focus,.locations .main-content ul li .tab:hover,.locations .main-content ul li .tab:focus{color:#7c7c7c}.care .main-content ul li .tab.selected,.doctors .main-content ul li .tab.selected,.locations .main-content ul li .tab.selected{color:#d66334}.care .main-content .description,.doctors .main-content .description,.locations .main-content .description{font-size:1em;line-height:1.35}.care .main-content hr,.doctors .main-content hr,.locations .main-content hr{height:2px;margin:25px 0 30px 0;border:0;background:#3ab6c2}.care .main-content p,.doctors .main-content p,.locations .main-content p{font-size:13px}.care .main-content p.light,.doctors .main-content p.light,.locations .main-content p.light{display:inline-block;font-size:1em}@media screen and (max-width: 480px){.care .main-content p.light,.doctors .main-content p.light,.locations .main-content p.light{width:100%;display:block}}.care .main-content .main.slide,.doctors .main-content .main.slide,.locations .main-content .main.slide{display:none}.care .care .main-content .main.slide,.care .doctors .main-content .main.slide,.care .locations .main-content .main.slide{margin-bottom:2em}.care .care .main-content .main.slide:last-child,.care .doctors .main-content .main.slide:last-child,.care .locations .main-content .main.slide:last-child{margin-bottom:0}.care .main-content .main.slide.visible,.doctors .main-content .main.slide.visible,.locations .main-content .main.slide.visible{display:block}.care .main-content .main .button,.doctors .main-content .main .button,.locations .main-content .main .button{width:auto;margin-top:3px;padding:12px 30px;background:#d66334;font-size:18px}@media screen and (max-width: 900px){.care .main-content .main .button,.doctors .main-content .main .button,.locations .main-content .main .button{display:block;float:none;width:180px;margin-top:15px}}@media screen and (max-width: 767px){.care .main-content .main .button,.doctors .main-content .main .button,.locations .main-content .main .button{float:right;margin-top:0;margin-right:0;padding:14px 30px;width:200px}}@media screen and (max-width: 600px){.care .main-content .main .button,.doctors .main-content .main .button,.locations .main-content .main .button{width:auto;padding:14px 15px;font-size:0.9em}}@media screen and (max-width: 480px){.care .main-content .main .button,.doctors .main-content .main .button,.locations .main-content .main .button{float:none;display:block;width:100%;margin:20px auto}}.care .main-content .main .button:hover,.care .main-content .main .button:focus,.doctors .main-content .main .button:hover,.doctors .main-content .main .button:focus,.locations .main-content .main .button:hover,.locations .main-content .main .button:focus{background:#b34e24}@media screen and (max-width: 767px){.care .main-content .main>.description,.doctors .main-content .main>.description,.locations .main-content .main>.description{margin:0px 0 60px 0}}@media screen and (max-width: 767px){.care .main-content .main>.description,.doctors .main-content .main>.description,.locations .main-content .main>.description{margin:0px 0 30px 0}}
-.doctors .residents{min-height:140px;margin:0 0 3em 0}@media screen and (max-width: 767px){.doctors .residents{margin:0px 0}}.doctors .residents:first-child{margin-top:0}.doctors .residents img{float:left;width:140px;height:140px;margin:0 24px 0 0;-webkit-border-radius:100%;-moz-border-radius:100%;border-radius:100%;vertical-align:middle}@media screen and (max-width: 768px){.doctors .residents img{width:110px;height:110px;margin:0 15px 0 0}}.doctors .residents p{margin:0;vertical-align:middle}@media screen and (max-width: 767px){.doctors .residents p{max-width:80%;margin:0 auto 0 0}}.doctors .residents p.title,.doctors .residents p.description{display:inline-block;margin:30px 8px 0 0}@media screen and (max-width: 768px){.doctors .residents p.title,.doctors .residents p.description{display:block;margin:0px 8px 0 0}}@media screen and (max-width: 767px){.doctors .residents p.title,.doctors .residents p.description{display:inline-block;margin:30px 8px 0 0}}.doctors .residents:nth-child(even){text-align:right}@media screen and (max-width: 768px){.doctors .residents:nth-child(even){margin:15px 0 15px 0px}}@media screen and (max-width: 480px){.doctors .residents:nth-child(even){margin:0px}}.doctors .residents:nth-child(even) img{float:right;margin:0 0 0 24px}@media screen and (max-width: 768px){.doctors .residents:nth-child(even) img{margin:0 0 0 15px}}@media screen and (max-width: 767px){.doctors .residents:nth-child(even) p{margin:0 0 0 auto}}.doctors .residents:nth-child(even) p.title,.doctors .residents:nth-child(even) p.description{margin:30px 0 0 8px}@media screen and (max-width: 768px){.doctors .residents:nth-child(even) p.title,.doctors .residents:nth-child(even) p.description{margin:0px 0px 0 8px}}@media screen and (max-width: 767px){.doctors .residents:nth-child(even) p.title,.doctors .residents:nth-child(even) p.description{margin:30px 0 0 8px}}
-@media screen and (max-width: 480px){.doctors .residents,.doctors .residents:nth-child(even){margin:40px auto}.doctors .residents img,.doctors .residents:nth-child(even) img{float:none;display:block;width:95px;height:95px;margin:0 auto}.doctors .residents p,.doctors .residents:nth-child(even) p{text-align:center;margin:10px auto 0 auto}.doctors .residents p.title,.doctors .residents p.description,.doctors .residents:nth-child(even) p.title,.doctors .residents:nth-child(even) p.description{display:block;margin:10px auto 0 auto;text-align:center}.doctors .residents p.title,.doctors .residents:nth-child(even) p.title{margin-top:0}}.locations .map{position:relative;height:390px;z-index:10}@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape){.locations .map{height:180px}}.locations .description{margin:0px 0 35px 0}.locations aside .description{margin:0px 0 12px 0}.locations .third-width{width:auto;margin:0 40px 15px 0}.locations .third-width.long{min-width:156px}@media screen and (max-width: 767px){.locations .third-width.long{width:25%}}@media screen and (max-width: 480px){.locations .third-width.long{width:40%}}@media screen and (max-width: 320px){.locations .third-width.long{width:100%}}.locations .third-width.short{min-width:0px}@media screen and (max-width: 767px){.locations .third-width.short{width:19%}}@media screen and (max-width: 480px){.locations .third-width.short{width:40%}}@media screen and (max-width: 320px){.locations .third-width.short{width:100%}}@media screen and (max-width: 900px){.locations .third-width{margin:0 4% 15px 0}}@media screen and (max-width: 767px){.locations .third-width{min-width:25%}}@media screen and (max-width: 480px){.locations .third-width{width:40%;margin:0 4% 35px 0}}@media screen and (max-width: 320px){.locations .third-width{width:100%;margin:0 0 15px 0}}.locations .third-width .entry{margin:0 0 15px 0}.locations .third-width .entry .title{margin-top:0}.locations .third-width .entry:last-child{margin:0}.locations .third-width a{display:block}
+.care .banner, .doctors .banner, .locations .banner {
+  position: absolute;
+  display: inline-block;
+  right: 14px;
+  top: 42px;
+  background: transparent;
+  border-width: 3px;
+  border-color: white;
+  border-style: solid;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; }
+  @media screen and (max-width: 768px) {
+    .care .banner, .doctors .banner, .locations .banner {
+      display: block;
+      position: relative;
+      margin: 0 auto;
+      top: 20px;
+      right: auto;
+      text-align: center; } }
+  .care .banner p, .doctors .banner p, .locations .banner p {
+    padding: 20px 18px;
+    line-height: .7; }
+    .care .banner p a, .doctors .banner p a, .locations .banner p a {
+      color: white;
+      font-weight: bolder;
+      padding-bottom: 2px;
+      border-bottom: 2px solid;
+      -webkit-transition: 175ms color ease-in-out;
+      -moz-transition: 175ms color ease-in-out;
+      -o-transition: 175ms color ease-in-out;
+      transition: 175ms color ease-in-out; }
+      .care .banner p a:hover, .doctors .banner p a:hover, .locations .banner p a:hover {
+        color: rgba(0, 0, 0, 0.5); }
+  @media screen and (max-width: 568px) {
+    .care .banner, .doctors .banner, .locations .banner {
+      border-width: 1px; }
+      .care .banner p, .doctors .banner p, .locations .banner p {
+        padding: 5px 18px;
+        line-height: 1.3;
+        font-size: 0.8em; } }
+.care .main-content, .doctors .main-content, .locations .main-content {
+  text-align: left;
+  padding-bottom: 65px; }
+  .care .main-content ul, .doctors .main-content ul, .locations .main-content ul {
+    margin: 25px 0 55px 0;
+    padding: 0;
+    z-index: 0; }
+    @media screen and (max-width: 768px) {
+      .care .main-content ul, .doctors .main-content ul, .locations .main-content ul {
+        margin: 25px 0 25px 0; } }
+    @media screen and (max-width: 480px) {
+      .care .main-content ul, .doctors .main-content ul, .locations .main-content ul {
+        position: relative;
+        width: 60%;
+        margin: 25px auto;
+        height: 39px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        background: #EEE;
+        overflow: hidden;
+        -webkit-transition: 175ms height ease-in-out;
+        -moz-transition: 175ms height ease-in-out;
+        -o-transition: 175ms height ease-in-out;
+        transition: 175ms height ease-in-out; } }
+    @media screen and (max-width: 320px) {
+      .care .main-content ul, .doctors .main-content ul, .locations .main-content ul {
+        width: 100%; } }
+    .care .main-content ul span, .doctors .main-content ul span, .locations .main-content ul span {
+      display: none;
+      position: absolute;
+      right: 10%;
+      top: 12px;
+      width: 14px;
+      height: 14px;
+      z-index: 100; }
+      .care .main-content ul span.js-hide-options, .doctors .main-content ul span.js-hide-options, .locations .main-content ul span.js-hide-options {
+        background: url(../../images/x.png) no-repeat center center;
+        background-size: cover; }
+        .care .main-content ul span.js-hide-options.js-show-options, .doctors .main-content ul span.js-hide-options.js-show-options, .locations .main-content ul span.js-hide-options.js-show-options {
+          background: url(../../images/arrow-down.png) no-repeat center center;
+          background-size: cover; }
+      @media screen and (max-width: 480px) {
+        .care .main-content ul span, .doctors .main-content ul span, .locations .main-content ul span {
+          display: block; } }
+    .care .main-content ul li, .doctors .main-content ul li, .locations .main-content ul li {
+      position: relative;
+      margin-right: 28px;
+      font-size: .77em;
+      font-weight: 700;
+      cursor: pointer;
+      z-index: 50; }
+      .care .main-content ul li.show-menu, .doctors .main-content ul li.show-menu, .locations .main-content ul li.show-menu {
+        display: none; }
+        @media screen and (max-width: 480px) {
+          .care .main-content ul li.show-menu, .doctors .main-content ul li.show-menu, .locations .main-content ul li.show-menu {
+            display: block; } }
+      @media screen and (max-width: 480px) {
+        .care .main-content ul li, .doctors .main-content ul li, .locations .main-content ul li {
+          display: block;
+          width: 85%;
+          margin-right: 0;
+          text-align: left;
+          padding: 9px 0 9px 10%;
+          -webkit-transition: 175ms all ease-in-out;
+          -moz-transition: 175ms all ease-in-out;
+          -o-transition: 175ms all ease-in-out;
+          transition: 175ms all ease-in-out; } }
+      .care .main-content ul li .tab, .doctors .main-content ul li .tab, .locations .main-content ul li .tab {
+        color: #959595; }
+        .care .main-content ul li .tab:hover, .care .main-content ul li .tab:focus, .doctors .main-content ul li .tab:hover, .doctors .main-content ul li .tab:focus, .locations .main-content ul li .tab:hover, .locations .main-content ul li .tab:focus {
+          color: #7c7c7c; }
+        .care .main-content ul li .tab.selected, .doctors .main-content ul li .tab.selected, .locations .main-content ul li .tab.selected {
+          color: #d66334; }
+  .care .main-content .description, .doctors .main-content .description, .locations .main-content .description {
+    font-size: 1em;
+    line-height: 1.35; }
+  .care .main-content hr, .doctors .main-content hr, .locations .main-content hr {
+    height: 2px;
+    margin: 25px 0 30px 0;
+    border: 0;
+    background: #3ab6c2; }
+  .care .main-content p, .doctors .main-content p, .locations .main-content p {
+    font-size: 13px; }
+    .care .main-content p.light, .doctors .main-content p.light, .locations .main-content p.light {
+      display: inline-block;
+      font-size: 1em; }
+      @media screen and (max-width: 480px) {
+        .care .main-content p.light, .doctors .main-content p.light, .locations .main-content p.light {
+          width: 100%;
+          display: block; } }
+  .care .main-content .main.slide, .doctors .main-content .main.slide, .locations .main-content .main.slide {
+    display: none; }
+    .care .care .main-content .main.slide, .care .doctors .main-content .main.slide, .care .locations .main-content .main.slide {
+      margin-bottom: 2em; }
+      .care .care .main-content .main.slide:last-child, .care .doctors .main-content .main.slide:last-child, .care .locations .main-content .main.slide:last-child {
+        margin-bottom: 0; }
+    .care .main-content .main.slide.visible, .doctors .main-content .main.slide.visible, .locations .main-content .main.slide.visible {
+      display: block; }
+  .care .main-content .main .button, .doctors .main-content .main .button, .locations .main-content .main .button {
+    width: auto;
+    margin-top: 3px;
+    padding: 12px 30px;
+    background: #d66334;
+    font-size: 18px; }
+    @media screen and (max-width: 900px) {
+      .care .main-content .main .button, .doctors .main-content .main .button, .locations .main-content .main .button {
+        display: block;
+        float: none;
+        width: 180px;
+        margin-top: 15px; } }
+    @media screen and (max-width: 767px) {
+      .care .main-content .main .button, .doctors .main-content .main .button, .locations .main-content .main .button {
+        float: right;
+        margin-top: 0;
+        margin-right: 0;
+        padding: 14px 30px;
+        width: 200px; } }
+    @media screen and (max-width: 600px) {
+      .care .main-content .main .button, .doctors .main-content .main .button, .locations .main-content .main .button {
+        width: auto;
+        padding: 14px 15px;
+        font-size: 0.9em; } }
+    @media screen and (max-width: 480px) {
+      .care .main-content .main .button, .doctors .main-content .main .button, .locations .main-content .main .button {
+        float: none;
+        display: block;
+        width: 100%;
+        margin: 20px auto; } }
+    .care .main-content .main .button:hover, .care .main-content .main .button:focus, .doctors .main-content .main .button:hover, .doctors .main-content .main .button:focus, .locations .main-content .main .button:hover, .locations .main-content .main .button:focus {
+      background: #b34e24; }
+  @media screen and (max-width: 767px) {
+    .care .main-content .main > .description, .doctors .main-content .main > .description, .locations .main-content .main > .description {
+      margin: 0px 0 60px 0; } }
+  @media screen and (max-width: 767px) {
+    .care .main-content .main > .description, .doctors .main-content .main > .description, .locations .main-content .main > .description {
+      margin: 0px 0 30px 0; } }
+
+.doctors .residents {
+  min-height: 140px;
+  margin: 0 0 3em 0; }
+  @media screen and (max-width: 767px) {
+    .doctors .residents {
+      margin: 0px 0; } }
+  .doctors .residents:first-child {
+    margin-top: 0; }
+  .doctors .residents img {
+    float: left;
+    width: 140px;
+    height: 140px;
+    margin: 0 24px 0 0;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    vertical-align: middle; }
+    @media screen and (max-width: 768px) {
+      .doctors .residents img {
+        width: 110px;
+        height: 110px;
+        margin: 0 15px 0 0; } }
+  .doctors .residents p {
+    margin: 0;
+    vertical-align: middle; }
+    @media screen and (max-width: 767px) {
+      .doctors .residents p {
+        max-width: 80%;
+        margin: 0 auto 0 0; } }
+    .doctors .residents p.title, .doctors .residents p.description {
+      display: inline-block;
+      margin: 30px 8px 0 0; }
+      @media screen and (max-width: 768px) {
+        .doctors .residents p.title, .doctors .residents p.description {
+          display: block;
+          margin: 0px 8px 0 0; } }
+      @media screen and (max-width: 767px) {
+        .doctors .residents p.title, .doctors .residents p.description {
+          display: inline-block;
+          margin: 30px 8px 0 0; } }
+  .doctors .residents:nth-child(even) {
+    text-align: right; }
+    @media screen and (max-width: 768px) {
+      .doctors .residents:nth-child(even) {
+        margin: 15px 0 15px 0px; } }
+    @media screen and (max-width: 480px) {
+      .doctors .residents:nth-child(even) {
+        margin: 0px; } }
+    .doctors .residents:nth-child(even) img {
+      float: right;
+      margin: 0 0 0 24px; }
+      @media screen and (max-width: 768px) {
+        .doctors .residents:nth-child(even) img {
+          margin: 0 0 0 15px; } }
+    @media screen and (max-width: 767px) {
+      .doctors .residents:nth-child(even) p {
+        margin: 0 0 0 auto; } }
+    .doctors .residents:nth-child(even) p.title, .doctors .residents:nth-child(even) p.description {
+      margin: 30px 0 0 8px; }
+      @media screen and (max-width: 768px) {
+        .doctors .residents:nth-child(even) p.title, .doctors .residents:nth-child(even) p.description {
+          margin: 0px 0px 0 8px; } }
+      @media screen and (max-width: 767px) {
+        .doctors .residents:nth-child(even) p.title, .doctors .residents:nth-child(even) p.description {
+          margin: 30px 0 0 8px; } }
+
+@media screen and (max-width: 480px) {
+  .doctors .residents, .doctors .residents:nth-child(even) {
+    margin: 40px auto; }
+    .doctors .residents img, .doctors .residents:nth-child(even) img {
+      float: none;
+      display: block;
+      width: 95px;
+      height: 95px;
+      margin: 0 auto; }
+    .doctors .residents p, .doctors .residents:nth-child(even) p {
+      text-align: center;
+      margin: 10px auto 0 auto; }
+      .doctors .residents p.title, .doctors .residents p.description, .doctors .residents:nth-child(even) p.title, .doctors .residents:nth-child(even) p.description {
+        display: block;
+        margin: 10px auto 0 auto;
+        text-align: center; }
+      .doctors .residents p.title, .doctors .residents:nth-child(even) p.title {
+        margin-top: 0; } }
+.locations .map {
+  position: relative;
+  height: 390px;
+  z-index: 10; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+    .locations .map {
+      height: 180px; } }
+  @media screen and (max-width: 480px) {
+    .locations .map {
+      height: 275px; } }
+.locations .description {
+  margin: 0px 0 35px 0; }
+.locations .main-content .main.slide {
+  min-height: 350px; }
+.locations aside .description {
+  margin: 0px 0 12px 0; }
+.locations .third-width {
+  width: auto;
+  margin: 0 40px 15px 0; }
+  .locations .third-width.long {
+    min-width: 156px; }
+    @media screen and (max-width: 767px) {
+      .locations .third-width.long {
+        width: 25%; } }
+    @media screen and (max-width: 480px) {
+      .locations .third-width.long {
+        width: 40%; } }
+    @media screen and (max-width: 320px) {
+      .locations .third-width.long {
+        width: 100%; } }
+  .locations .third-width.short {
+    min-width: 0px; }
+    @media screen and (max-width: 767px) {
+      .locations .third-width.short {
+        width: 19%; } }
+    @media screen and (max-width: 480px) {
+      .locations .third-width.short {
+        width: 40%; } }
+    @media screen and (max-width: 320px) {
+      .locations .third-width.short {
+        width: 100%; } }
+  @media screen and (max-width: 900px) {
+    .locations .third-width {
+      margin: 0 4% 15px 0; } }
+  @media screen and (max-width: 767px) {
+    .locations .third-width {
+      min-width: 25%; } }
+  @media screen and (max-width: 480px) {
+    .locations .third-width {
+      width: 40%;
+      margin: 0 4% 35px 0; } }
+  @media screen and (max-width: 320px) {
+    .locations .third-width {
+      width: 100%;
+      margin: 0 0 15px 0; } }
+  .locations .third-width .entry {
+    margin: 0 0 15px 0; }
+    .locations .third-width .entry .title {
+      margin-top: 0; }
+    .locations .third-width .entry:last-child {
+      margin: 0; }
+  .locations .third-width a {
+    display: block; }
