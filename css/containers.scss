@@ -292,6 +292,7 @@ footer {
 	position: relative;
 	background: $blue;
 	color: white;
+	z-index: 100;
 
 	.half-width {
 		p {

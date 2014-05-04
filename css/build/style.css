@@ -206,7 +206,7 @@ header {
   -webkit-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.35);
   box-shadow: 0 2px 9px rgba(0, 0, 0, 0.35);
-  z-index: 1000;
+  z-index: 10000;
   overflow: hidden; }
   @media screen and (max-width: 768px) {
     header {
@@ -220,7 +220,8 @@ header {
       -o-transition: 175ms all ease-in-out;
       transition: 175ms all ease-in-out; } }
   header.open {
-    height: 210px; }
+    height: 210px;
+    z-index: 10000; }
   header .header {
     max-width: 1180px;
     width: 95%;
@@ -623,7 +624,8 @@ nav {
 footer {
   position: relative;
   background: #3ab6c2;
-  color: white; }
+  color: white;
+  z-index: 100; }
   footer .half-width p {
     width: 390px; }
     @media screen and (max-width: 900px) {

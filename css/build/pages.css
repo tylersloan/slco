@@ -177,6 +177,11 @@
     .care .main-content .main > .description, .doctors .main-content .main > .description, .locations .main-content .main > .description {
       margin: 0px 0 30px 0; } }
 
+.care .main-content {
+  margin-top: 2em; }
+.care .js-slides {
+  display: none; }
+
 .doctors .residents {
   min-height: 140px;
   margin: 0 0 3em 0; }
