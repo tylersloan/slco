@@ -1,5 +1,5 @@
 <?php
-  $title = strtolower($title);
+  $title = strtolower($page_title);
   function create_slug($title){
     $title_slug=preg_replace('/[^A-Za-z0-9-]+/', '-', $title);
     return $title_slug;
@@ -10,7 +10,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Carolina Oaks | <?php echo $title; ?></title>
+  <title>Carolina Oaks | <?php echo $page_title; ?></title>
 
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 

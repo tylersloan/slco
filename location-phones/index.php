@@ -1,5 +1,5 @@
 <?php
-	$title = "Phone Numbers";
+	$page_title = "Phone Numbers";
 	include '../templates/_header.php';
 ?>
 

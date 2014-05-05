@@ -1,8 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -203,6 +203,7 @@ header {
   height: 70px;
   padding: 20px 50px;
   background: #fff;
+  -webkit-transform: translateZ(0);
   -webkit-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.35);
   box-shadow: 0 2px 9px rgba(0, 0, 0, 0.35);
@@ -279,9 +280,11 @@ nav {
       -webkit-border-radius: 3px;
       -moz-border-radius: 3px;
       border-radius: 3px; }
+      nav ul li a {
+        display: inline-block; }
       nav ul li.icon {
         font-size: 24px;
-        padding: 0 11px 2px 11px;
+        padding: 0px 11px 2px 11px;
         vertical-align: middle; }
       @media screen and (max-width: 480px) {
         nav ul li.selected {
@@ -930,8 +933,8 @@ section.half-width {
     outline-offset: 0px;
     background-color: rgba(255, 255, 255, 0.95);
     border: 2px solid #3ab6c2;
-    -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;

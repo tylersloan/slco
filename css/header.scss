@@ -10,6 +10,7 @@ header {
 	height: 70px;
 	padding: 20px 50px;
 	background: #fff;
+	-webkit-transform: translateZ(0);
 	@include box-shadow(0, 2px, 9px, rgba(0,0,0,.35));
 	z-index: 10000;
 	overflow: hidden;
@@ -93,9 +94,11 @@ nav {
 			}
 			@include border-radius(3px);
 
+			a { display: inline-block; }
+
 			&.icon {
 				font-size: 24px;
-				padding: 0 11px 2px 11px;
+				padding: 0px 11px 2px 11px;
 				vertical-align: middle;
 			}
 
