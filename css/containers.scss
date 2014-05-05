@@ -169,6 +169,45 @@
 	}
 }
 
+.popup {
+	position: relative;
+	width: 90%;
+	max-width: 338px;
+	margin: 0 auto;
+	padding: 0 0 55px 0;
+	text-align: center;
+	background: #fff;
+
+	.phone-numbers & { width: 100%; max-width: 100%; margin-top: 67px; }
+
+	.top {
+		margin-bottom: 1.5em;
+		p {
+			background: #d66334;
+			padding-top: 2em;
+			padding-bottom: .75em;
+			color: #fff;
+		}
+	}
+
+	section {
+		padding: 1em 1em 0 1em;
+		font-weight: 300;
+		p {
+			color: #555555;
+			font-size: 17px;
+			@include roboto;
+		}
+	}
+
+	h5 {
+		font-size: 24px;
+		font-weight: 300;
+		color: #39b3be;
+		@include roboto-cond;
+	}
+}
+
 .two-column {
 	margin-top: 25px;
 	@include column-count(2);

@@ -35,6 +35,8 @@
 				border-bottom: 2px solid;
 				@include transition(175ms, color, ease-in-out);
 
+				@media screen and (max-width: 480px) { padding-bottom: 0; }
+
 				&:hover {
 					color: rgba(0,0,0,.5);
 				}

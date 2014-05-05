@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+  $('.launch-popup').magnificPopup({
+    type:'inline',
+    closeBtnInside: true,
+    closeOnBgClick: true,
+    midClick: true,
+    disableOn: 481
+  });
+
   $('.chosen').chosen({
     "disable_search": true
   });
@@ -111,8 +119,6 @@ $(document).ready(function() {
       var marker = new google.maps.Marker({
           position: myLatLng,
           map: map,
-          // icon: image,
-          // shape: shape,
           title: office[0],
           zIndex: office[3]
       });

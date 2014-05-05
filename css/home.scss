@@ -97,10 +97,6 @@
 		z-index: -1;
 	}
 
-	@media screen and (max-width: 320px) {
-		padding-top: 22%;
-	}
-
 	.factoids-container {
 		position: absolute;
 		background: transparent;
@@ -139,6 +135,7 @@
 		@media screen and (max-width: 700px) {
 			margin: 0px auto 20px auto;
 			font-size: 1.2em;
+			line-height: 1.3;
 		}
 	}
 

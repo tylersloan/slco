@@ -30,6 +30,9 @@
       -moz-transition: 175ms color ease-in-out;
       -o-transition: 175ms color ease-in-out;
       transition: 175ms color ease-in-out; }
+      @media screen and (max-width: 480px) {
+        .care .banner p a, .doctors .banner p a, .locations .banner p a {
+          padding-bottom: 0; } }
       .care .banner p a:hover, .doctors .banner p a:hover, .locations .banner p a:hover {
         color: rgba(0, 0, 0, 0.5); }
   @media screen and (max-width: 568px) {

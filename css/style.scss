@@ -292,27 +292,7 @@ p {
 	  border: 2px solid $blue;
 	  @include border-box;
 	  @include border-radius(2px);
-		@include transition(175ms, all, ease-in-out);
-
-		// @media screen and (max-width: 1024px) {
-		// 	width: 48%;
-		// }
-		
-		// @media screen and (max-width: 900px) {
-		// 	display: block;
-		// 	width: 100%;
-		// }
-
-		// @media screen and (max-width: 768px) {
-		// 	display: inline-block;
-		// 	width: 49%;
-		// }
-
-		// @media screen and (max-width: 600px) {
-		// 	display: block;
-		// 	width: 100%;
-		// }
-		
+		@include transition(175ms, all, ease-in-out);		
 
 		&:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; color: rgb(149, 149, 149) !important; }
 	  &:focus { background-color: white; border: 2px solid darken($blue,12%); }
@@ -342,3 +322,5 @@ p {
 		&:hover, &:focus { background: darken($yellow, 12%); }
 	}
 }
+
+@import 'magnific';

@@ -148,13 +148,15 @@ Phone
     
   </footer>
 
-    <script src="<?php echo "http://" . $_SERVER['HTTP_HOST']; ?>/js/build/production.min.js"></script>
   <script type="text/javascript" src="//use.typekit.net/ava6syz.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
+  <!--<script src="<?php echo "http://" . $_SERVER['HTTP_HOST']; ?>/js/jquery.js"></script>
+  <script src="<?php echo "http://" . $_SERVER['HTTP_HOST']; ?>/js/jqueryui.js"></script>
   <script src="<?php echo "http://" . $_SERVER['HTTP_HOST']; ?>/contact-form/scripts/wufoo.js"></script>
-  <script src="<?php echo "http://" . $_SERVER['HTTP_HOST']; ?>/js/plugins/jq.chosen/chosen.jquery.min.js"></script>
-  <script src="<?php echo "http://" . $_SERVER['HTTP_HOST']; ?>/js/scripts.js"></script>
+  <script src="<?php echo "http://" . $_SERVER['HTTP_HOST']; ?>/js/magnific.js"></script>
+  <script src="<?php echo "http://" . $_SERVER['HTTP_HOST']; ?>/js/plugins/jq.chosen/chosen.jquery.js"></script>-->
+  <script src="<?php echo "http://" . $_SERVER['HTTP_HOST']; ?>/js/scripts.min.js"></script>
 
 </body>
 </html>
