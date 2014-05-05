@@ -15,7 +15,7 @@ header {
 	z-index: 10000;
 	overflow: hidden;
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 810px) {
 		height: auto;
 	}
 
@@ -44,7 +44,7 @@ header {
 	text-indent: -9999px;
 	line-height: 1.7;
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 810px) {
 		float: none;
 		display: block;
 		width: 100%;
@@ -66,7 +66,7 @@ nav {
 	display: inline-block;
 	vertical-align: top;
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 810px) {
 		display: block;
 		margin-top: 15px;
 		text-align: center;
@@ -110,7 +110,7 @@ nav {
 					@include border-radius(0);
 				}
 			}
-			@media screen and (max-width: 768px) {
+			@media screen and (max-width: 810px) {
 				padding: 9px 7px;
 			}
 

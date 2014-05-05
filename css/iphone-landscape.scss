@@ -8,14 +8,15 @@
 	}	
 
 	header {
-		height: 35px;
-		padding: 10px 0px 20px 0px;
+		height: auto;
+		padding: 10px 0px 10px 0px;
 
 		&.open { height: 140px; }
 	}
 
 	.logo {
-		background-size: 100px auto;
+		height: 25px;
+		background-size: 35% auto;
 	}
 
 	.mobile-menu-icon {
@@ -24,16 +25,30 @@
 	}
 
 	nav {
-		margin-top: 5px;
+		margin-top: 0;
+		
 		ul {
-			width: 40%;
+			width: 60%;
 			font-size: .9em;
 
 			li {
-				padding: 7px 0;
+				padding: 7px;
+
+				&.icon { padding: 7px; font-size: 1.8em; }
 			}
 		}
 	}
+
+	.home {
+		.banner {
+			p {
+				width: 100%;
+				padding: 8px 10px;
+			}
+		}
+	}
+
+	.hero { margin-top: 75px; }
 
 	.banner {
 		p {
@@ -121,7 +136,8 @@
 		}
 	}
 
-	.factoid { padding-top: 18%;
+	.factoid {
+		padding-top: 15px;
 
 		h4 { margin: 0px auto 10px auto; }
 		span { top: -6px; }

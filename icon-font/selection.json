@@ -19,7 +19,7 @@
 				"name": "user",
 				"ligatures": ""
 			},
-			"setIdx": 0,
+			"setIdx": 1,
 			"iconIdx": 0
 		},
 		{
@@ -40,7 +40,7 @@
 				"name": "acorn",
 				"ligatures": ""
 			},
-			"setIdx": 0,
+			"setIdx": 1,
 			"iconIdx": 5
 		},
 		{
@@ -61,7 +61,7 @@
 				"name": "arrow-right",
 				"ligatures": ""
 			},
-			"setIdx": 0,
+			"setIdx": 1,
 			"iconIdx": 4
 		},
 		{
@@ -82,7 +82,7 @@
 				"name": "heart",
 				"ligatures": ""
 			},
-			"setIdx": 0,
+			"setIdx": 1,
 			"iconIdx": 3
 		},
 		{
@@ -103,7 +103,7 @@
 				"name": "iphone",
 				"ligatures": ""
 			},
-			"setIdx": 0,
+			"setIdx": 1,
 			"iconIdx": 2
 		},
 		{
@@ -124,8 +124,33 @@
 				"name": "phone",
 				"ligatures": ""
 			},
-			"setIdx": 0,
+			"setIdx": 1,
 			"iconIdx": 1
+		},
+		{
+			"icon": {
+				"paths": [
+					"M64 192h896v192h-896zM64 448h896v192h-896zM64 704h896v192h-896z"
+				],
+				"tags": [
+					"menu",
+					"list",
+					"items",
+					"lines",
+					"options"
+				],
+				"grid": 16
+			},
+			"properties": {
+				"id": 184,
+				"order": 7,
+				"prevSize": 32,
+				"code": 58886,
+				"name": "menu",
+				"ligatures": ""
+			},
+			"setIdx": 0,
+			"iconIdx": 184
 		}
 	],
 	"height": 1024,
@@ -138,7 +163,9 @@
 		"fontPref": {
 			"prefix": "icon-",
 			"metadata": {
-				"fontFamily": "icomoon"
+				"fontFamily": "icomoon",
+				"majorVersion": 1,
+				"minorVersion": 0
 			},
 			"metrics": {
 				"emSize": 512,

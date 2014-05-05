@@ -63,7 +63,7 @@
   <header>
     <div class="header">
       <a href="../" class="logo">Carolina Oaks</a>
-      <span class="mobile-menu-icon icon-menu2"></span>
+      <span class="mobile-menu-icon icon-menu"></span>
       <nav>
         <ul>
           <li><a href="<?php echo "http://" . $_SERVER['HTTP_HOST']; ?>/care">Care</a></li>

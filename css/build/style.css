@@ -209,7 +209,7 @@ header {
   box-shadow: 0 2px 9px rgba(0, 0, 0, 0.35);
   z-index: 10000;
   overflow: hidden; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 810px) {
     header {
       height: auto; } }
   @media screen and (max-width: 480px) {
@@ -237,7 +237,7 @@ header {
   background-size: 258px auto;
   text-indent: -9999px;
   line-height: 1.7; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 810px) {
     .logo {
       float: none;
       display: block;
@@ -256,7 +256,7 @@ nav {
   float: right;
   display: inline-block;
   vertical-align: top; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 810px) {
     nav {
       display: block;
       margin-top: 15px;
@@ -294,7 +294,7 @@ nav {
           -webkit-border-radius: 0;
           -moz-border-radius: 0;
           border-radius: 0; } }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 810px) {
         nav ul li {
           padding: 9px 7px; } }
       @media screen and (max-width: 480px) {
@@ -770,13 +770,14 @@ section.half-width {
     line-height: 1.5; }
 
   header {
-    height: 35px;
-    padding: 10px 0px 20px 0px; }
+    height: auto;
+    padding: 10px 0px 10px 0px; }
     header.open {
       height: 140px; }
 
   .logo {
-    background-size: 100px auto; }
+    height: 25px;
+    background-size: 35% auto; }
 
   .mobile-menu-icon {
     font-size: 1em;
@@ -786,12 +787,22 @@ section.half-width {
     transform: translate3d(0px, 6px, 0); }
 
   nav {
-    margin-top: 5px; }
+    margin-top: 0; }
     nav ul {
-      width: 40%;
+      width: 60%;
       font-size: .9em; }
       nav ul li {
-        padding: 7px 0; }
+        padding: 7px; }
+        nav ul li.icon {
+          padding: 7px;
+          font-size: 1.8em; }
+
+  .home .banner p {
+    width: 100%;
+    padding: 8px 10px; }
+
+  .hero {
+    margin-top: 75px; }
 
   .banner p {
     width: 90%;
@@ -853,7 +864,7 @@ section.half-width {
       padding: 8px 10px; }
 
   .factoid {
-    padding-top: 18%; }
+    padding-top: 15px; }
     .factoid h4 {
       margin: 0px auto 10px auto; }
     .factoid span {
