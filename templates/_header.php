@@ -66,10 +66,10 @@
       <span class="mobile-menu-icon icon-menu"></span>
       <nav>
         <ul>
-          <li><a href="<?php echo "http://" . $_SERVER['HTTP_HOST']; ?>/care">Care</a></li>
-          <li><a href="<?php echo "http://" . $_SERVER['HTTP_HOST']; ?>/doctors">Doctors</a></li>
-          <li><a href="<?php echo "http://" . $_SERVER['HTTP_HOST']; ?>/locations">Locations</a></li>
-          <li class="contact-link"><a class="contact-link" href="#contact">Contact</a></li>
+          <li class="close-mfp"><a href="<?php echo "http://" . $_SERVER['HTTP_HOST']; ?>/care">Care</a></li>
+          <li class="close-mfp"><a href="<?php echo "http://" . $_SERVER['HTTP_HOST']; ?>/doctors">Doctors</a></li>
+          <li class="close-mfp"><a href="<?php echo "http://" . $_SERVER['HTTP_HOST']; ?>/locations">Locations</a></li>
+          <li class="close-mfp contact-link"><a class="contact-link" href="#contact">Contact</a></li>
           <li class="icon">
             <a href="<?php echo "http://" . $_SERVER['HTTP_HOST']; ?>/location-phones" data-mfp-src="#phone-popup" class="launch-popup">
               <span class="icon-phone"></span>

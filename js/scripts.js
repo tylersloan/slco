@@ -1,11 +1,22 @@
 $(document).ready(function() {
 
+  var magnificPopup = $.magnificPopup.instance;
+
   $('.launch-popup').magnificPopup({
     type:'inline',
     closeBtnInside: true,
     closeOnBgClick: true,
     midClick: true,
-    disableOn: 481
+    disableOn: 481,
+    callbacks: {
+      close: function(){
+        magnificPopup.close();
+      }
+    }
+  });
+
+  $('.close-mfp').on('click', function(){
+    magnificPopup.close();
   });
 
   $('.chosen').chosen({
