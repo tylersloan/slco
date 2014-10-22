@@ -90,9 +90,9 @@ $(document).ready(function() {
    */
   var offices = [
     ['Greenville Office', 34.840954, -82.364133, 4],
-    ['West Greenville Office', 34.888942, -82.466820, 2],
+    // ['West Greenville Office', 34.888942, -82.466820, 2],
     ['Clemson office', 34.704724, -82.833379, 3],
-    ['North Greenville', 35.027710, -82.500744, 4],
+    ['Travelers Rest', 34.9658927, -82.4414087, 4],
     ['Anderson', 34.478281, -82.598196, 5]
   ];
 
