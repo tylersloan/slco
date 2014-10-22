@@ -27,6 +27,8 @@
 
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,500|Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="//use.typekit.net/ava6syz.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 <body class="<?php echo $title; ?>">
 
